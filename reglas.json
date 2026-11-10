@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-10",
+  "version": "2026-11-10.2",
   "fiscal": {
     "impuesto_electrico": 0.05112696,
     "iva": 0.21,
@@ -23,14 +23,24 @@
       "nota": "La web muestra también precios rebajados (valle 0,0809) sin explicar condiciones ni duración."
     },
     {
-      "id": "niba-tres",
-      "nombre": "Niba Tres",
-      "punta": 0.217, "llano": 0.167, "valle": 0.097,
-      "potencia_p1": 0.097, "potencia_p2": 0.097,
-      "excedentes": 0.06,
-      "fuente": "https://niba.es/contratar-luz",
+      "id": "iberdrola-online-3p",
+      "nombre": "Iberdrola Plan Online Tres Periodos",
+      "punta": 0.2116, "llano": 0.1566, "valle": 0.1236,
+      "potencia_p1": 0.090411, "potencia_p2": 0.023562,
+      "excedentes": 0.03,
+      "fuente": "https://www.iberdrola.es/luz/tarifas/plan-online-tres-periodos",
       "comprobado": "2026-11-10",
-      "nota": "Precios fijos 12 meses."
+      "nota": "Sin permanencia. Oferta válida hasta el 15/11/2026."
+    },
+    {
+      "id": "endesa-conecta-3p",
+      "nombre": "Endesa Tarifa Conecta 3 Periodos",
+      "punta": 0.202410, "llano": 0.134010, "valle": 0.110610,
+      "potencia_p1": 0.093665, "potencia_p2": 0.093665,
+      "excedentes": null,
+      "fuente": "https://www.endesa.com/es/luz-y-gas/luz/one/tarifa-one-luz-3periodos",
+      "comprobado": "2026-11-10",
+      "nota": "Con el 10 % de descuento en la energía el primer año; después 0,2249 / 0,1489 / 0,1229 €/kWh. Potencia 34,187694 €/kW año. Sin permanencia."
     },
     {
       "id": "repsol-ve",
@@ -62,6 +72,100 @@
       "comprobado": "2026-11-10",
       "nota": "Solo para consumos inferiores a 4.000 kWh/año.",
       "consumo_max_kwh_año": 4000
+    },
+    {
+      "id": "octopus-3",
+      "nombre": "Octopus 3",
+      "punta": 0.183, "llano": 0.155, "valle": 0.149,
+      "potencia_p1": 0.12, "potencia_p2": 0.12,
+      "excedentes": null,
+      "fuente": "https://octopusenergy.es/precios",
+      "comprobado": "2026-11-10",
+      "nota": "Precio fijo 12 meses, sin permanencia."
+    },
+    {
+      "id": "octopus-relax",
+      "nombre": "Octopus Relax (precio único)",
+      "punta": 0.159, "llano": 0.159, "valle": 0.159,
+      "potencia_p1": 0.12, "potencia_p2": 0.12,
+      "excedentes": null,
+      "fuente": "https://octopusenergy.es/precios",
+      "comprobado": "2026-11-10",
+      "nota": "Mismo precio las 24 horas, fijo 12 meses, sin permanencia. No compensa excedentes."
+    },
+    {
+      "id": "som-energia-periodos",
+      "nombre": "Som Energia Tarifa Periodos",
+      "punta": 0.274, "llano": 0.194, "valle": 0.175,
+      "potencia_p1": 0.082011, "potencia_p2": 0.008096,
+      "excedentes": 0.03,
+      "fuente": "https://www.somenergia.coop/es/tarifas-luz/domestico-periodos",
+      "comprobado": "2026-11-10",
+      "nota": "Precio publicado 0,249 / 0,169 / 0,150 €/kWh más 0,025 €/kWh de servicios de ajuste (media del último mes, varía). Potencia 29,934 y 2,955 €/kW año. Precios desde el 01/10/2026, sin permanencia."
+    },
+    {
+      "id": "plenitude-facil-hasta5",
+      "nombre": "Plenitude Fácil Plus Luz (hasta 5 kW)",
+      "punta": 0.146559, "llano": 0.146559, "valle": 0.146559,
+      "potencia_p1": 0.112498, "potencia_p2": 0.112498,
+      "excedentes": null,
+      "potencia_max_kw": 5,
+      "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil/",
+      "comprobado": "2026-11-10",
+      "nota": "Precio único fijo 12 meses, sin permanencia. 40 € por transferencia a los dos meses si se contrata online hasta el 30/11/2026 (no incluido en el cálculo)."
+    },
+    {
+      "id": "plenitude-facil-mas5",
+      "nombre": "Plenitude Fácil Plus Luz (más de 5 kW)",
+      "punta": 0.166887, "llano": 0.166887, "valle": 0.166887,
+      "potencia_p1": 0.112498, "potencia_p2": 0.112498,
+      "excedentes": null,
+      "potencia_min_kw": 5,
+      "potencia_max_kw": 15,
+      "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil/",
+      "comprobado": "2026-11-10",
+      "nota": "Precio único fijo 12 meses, sin permanencia. 40 € por transferencia a los dos meses si se contrata online hasta el 30/11/2026 (no incluido en el cálculo)."
+    },
+    {
+      "id": "lucera-fijo",
+      "nombre": "Lucera Tarifa Precio Fijo",
+      "punta": 0.125, "llano": 0.125, "valle": 0.125,
+      "potencia_p1": 0.088, "potencia_p2": 0.088,
+      "excedentes": null,
+      "fuente": "https://lucera.es/tarifas-luz/precio-fijo",
+      "comprobado": "2026-11-10",
+      "nota": "Precio único fijo 12 meses, sin permanencia. En la primera revisión el precio máximo sería 0,160 €/kWh."
+    },
+    {
+      "id": "gana-tramos",
+      "nombre": "Gana Energía Tramos Horarios",
+      "punta": 0.201, "llano": 0.134, "valle": 0.110,
+      "potencia_p1": 0.099, "potencia_p2": 0.099,
+      "excedentes": 0.06,
+      "fuente": "https://ganaenergia.com/tarifas-luz/tramos-horarios",
+      "comprobado": "2026-11-10",
+      "nota": "Precio fijo 12 meses, sin permanencia."
+    },
+    {
+      "id": "pepeenergy-estable",
+      "nombre": "Pepeenergy Tarifa Estable",
+      "punta": 0.1199, "llano": 0.1199, "valle": 0.1199,
+      "potencia_p1": 0.1334, "potencia_p2": 0.0595,
+      "excedentes": 0.082909,
+      "cuota_mes": 3.305785,
+      "fuente": "https://www.pepeenergy.com/tarifas-luz/tarifa-estable-luz",
+      "comprobado": "2026-11-10",
+      "nota": "Cuota de 4 €/mes con IVA (gratis para clientes de Pepephone). Precio revisable cada 6 meses. Excedentes a precio de mercado (octubre de 2026: 0,082909 €/kWh)."
+    },
+    {
+      "id": "niba-tres",
+      "nombre": "Niba Tres",
+      "punta": 0.217, "llano": 0.167, "valle": 0.097,
+      "potencia_p1": 0.097, "potencia_p2": 0.097,
+      "excedentes": 0.06,
+      "fuente": "https://niba.es/contratar-luz",
+      "comprobado": "2026-11-10",
+      "nota": "Precios fijos 12 meses."
     }
   ]
 }
