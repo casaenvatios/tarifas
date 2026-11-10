@@ -1,0 +1,67 @@
+{
+  "version": "2026-11-10",
+  "fiscal": {
+    "impuesto_electrico": 0.05112696,
+    "iva": 0.21,
+    "bono_social_euros_año": 9.011295,
+    "contador_dia": 0.02663,
+    "fuentes": {
+      "impuesto_electrico": "Factura Naturgy FE26390037917236 (sept. 2026)",
+      "bono_social_euros_año": "Orden TED/634/2026, vigente desde 01/07/2026 (citada en totalenergies.es)",
+      "contador_dia": "Factura Naturgy FE26390037917236 (sept. 2026)"
+    }
+  },
+  "ofertas": [
+    {
+      "id": "naturgy-noche-lista",
+      "nombre": "Naturgy Tarifa Noche (precio de lista)",
+      "punta": 0.218, "llano": 0.145, "valle": 0.110,
+      "potencia_p1": 0.123030, "potencia_p2": 0.061562,
+      "excedentes": 0.06,
+      "fuente": "https://www.naturgy.es/hogar/luz/tarifa_noche",
+      "comprobado": "2026-11-10",
+      "nota": "La web muestra también precios rebajados (valle 0,0809) sin explicar condiciones ni duración."
+    },
+    {
+      "id": "niba-tres",
+      "nombre": "Niba Tres",
+      "punta": 0.217, "llano": 0.167, "valle": 0.097,
+      "potencia_p1": 0.097, "potencia_p2": 0.097,
+      "excedentes": 0.06,
+      "fuente": "https://niba.es/contratar-luz",
+      "comprobado": "2026-11-10",
+      "nota": "Precios fijos 12 meses."
+    },
+    {
+      "id": "repsol-ve",
+      "nombre": "Repsol Tarifa Vehículo Eléctrico",
+      "punta": 0.2399, "llano": 0.2399, "valle": 0.0999,
+      "potencia_p1": 0.099726, "potencia_p2": 0.099726,
+      "excedentes": null,
+      "fuente": "https://www.repsol.es/particulares/vehiculos/movilidad-electrica/tarifa-vehiculo-electrico/",
+      "comprobado": "2026-11-10",
+      "nota": "Precios 12 meses. La página no publica compensación de excedentes."
+    },
+    {
+      "id": "totalenergies-pta-mas4000",
+      "nombre": "TotalEnergies Programa tu Ahorro (más de 4.000 kWh/año)",
+      "punta": 0.252672, "llano": 0.18303, "valle": 0.155276,
+      "potencia_p1": 0.078055, "potencia_p2": 0.078055,
+      "excedentes": null,
+      "fuente": "https://www.totalenergies.es/es/hogares/tarifas-luz/a-tu-aire-programa-tu-ahorro",
+      "comprobado": "2026-11-10",
+      "nota": "Precio válido desde el 16/10/2026 para consumos superiores a 4.000 kWh/año."
+    },
+    {
+      "id": "totalenergies-pta-menos4000",
+      "nombre": "TotalEnergies Programa tu Ahorro (menos de 4.000 kWh/año)",
+      "punta": 0.183572, "llano": 0.11393, "valle": 0.086176,
+      "potencia_p1": 0.094493, "potencia_p2": 0.094493,
+      "excedentes": null,
+      "fuente": "https://www.totalenergies.es/es/hogares/tarifas-luz/a-tu-aire-programa-tu-ahorro",
+      "comprobado": "2026-11-10",
+      "nota": "Solo para consumos inferiores a 4.000 kWh/año.",
+      "consumo_max_kwh_año": 4000
+    }
+  ]
+}
