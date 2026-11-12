@@ -1,0 +1,31 @@
+name: Actualizar ofertas de la CNMC
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generar reglas.json
+        run: python actualizar_ofertas.py --salida reglas.json
+      - name: Publicar si ha cambiado
+        run: |
+          if git diff --quiet -- reglas.json; then
+            echo "Sin cambios en las ofertas."
+            exit 0
+          fi
+          git config user.name "casaenvatios-bot"
+          git config user.email "casa.en.vatios@gmail.com"
+          git add reglas.json
+          git commit -m "Ofertas de la CNMC del $(date +%d/%m/%Y)"
+          git push
