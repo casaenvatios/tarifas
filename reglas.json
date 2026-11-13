@@ -305,7 +305,7 @@
    "excedentes": null,
    "vigencia": "Oferta hasta el 29/11/2027, revisión de precios anual",
    "valido_hasta": "2027-11-29",
-   "fuente": "https://www.logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
+   "fuente": "https://logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
    "comprobado": "2026-11-13",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
    "origen": "cnmc"
@@ -321,7 +321,7 @@
    "excedentes": null,
    "vigencia": "Oferta hasta el 29/11/2026, revisión de precios anual",
    "valido_hasta": "2026-11-29",
-   "fuente": "https://www.logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
+   "fuente": "https://logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
    "comprobado": "2026-11-13",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
    "origen": "cnmc"
@@ -673,7 +673,7 @@
    "excedentes": null,
    "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
    "valido_hasta": "2026-12-30",
-   "fuente": "https://www.energianufri.com/es/landing/mas-tarifas-luz-gas",
+   "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-13",
    "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
    "origen": "cnmc"
@@ -689,7 +689,7 @@
    "excedentes": null,
    "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
    "valido_hasta": "2026-12-30",
-   "fuente": "https://www.energianufri.com/es/landing/mas-tarifas-luz-gas",
+   "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-13",
    "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
    "origen": "cnmc"
