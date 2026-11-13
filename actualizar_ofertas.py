@@ -16,10 +16,13 @@ import argparse
 import datetime as dt
 import json
 import re
+import socket
+import ssl
 import sys
 import unicodedata
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 API = 'https://comparador.cnmc.gob.es/api/APIPublica/ofertas?fecha={fecha}'
 
@@ -221,6 +224,86 @@ def convertir(o, hoy):
     return oferta, None
 
 
+NAVEGADOR = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36',
+    'Accept-Language': 'es-ES,es;q=0.9',
+}
+
+
+def estado_enlace(url):
+    """'vivo', 'roto' (la página no existe o el dominio no responde) o 'dudoso' (no se sabe).
+
+    Muchas webs bloquean a los programas (403): eso cuenta como vivo, porque en el
+    navegador del usuario sí abren. Solo un 404/410 o un dominio que no existe es roto.
+    """
+    for metodo in ('HEAD', 'GET'):
+        try:
+            req = urllib.request.Request(url, method=metodo, headers=NAVEGADOR)
+            with urllib.request.urlopen(req, timeout=20):
+                return 'vivo'
+        except urllib.error.HTTPError as e:
+            if e.code in (404, 410):
+                if metodo == 'GET':
+                    return 'roto'
+                continue  # algunos servidores responden mal a HEAD: se confirma con GET
+            if e.code in (401, 403, 405, 429) and metodo == 'GET':
+                return 'vivo'
+            if metodo == 'GET':
+                return 'dudoso'
+        except urllib.error.URLError as e:
+            motivo = getattr(e, 'reason', None)
+            if isinstance(motivo, socket.gaierror):
+                return 'roto'  # el dominio no existe (como "www." que no está configurado)
+            if isinstance(motivo, ssl.SSLCertVerificationError):
+                return 'roto'  # certificado no válido: el móvil avisaría de "conexión no segura"
+            if metodo == 'GET':
+                return 'dudoso'
+        except Exception:  # noqa: BLE001
+            if metodo == 'GET':
+                return 'dudoso'
+    return 'dudoso'
+
+
+def arreglar_enlaces(ofertas, alternativas):
+    """Cambia los enlaces rotos por el primero que funcione: sin "www.", la página de
+    particulares, la web de otra oferta de la misma compañía o su portada. Nunca un PDF."""
+    unicos = sorted({o['fuente'] for o in ofertas})
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        estados = dict(zip(unicos, ex.map(estado_enlace, unicos)))
+    cache = dict(estados)
+
+    def vivo(url):
+        if url not in cache:
+            cache[url] = estado_enlace(url)
+        return cache[url] == 'vivo'
+
+    # Webs que funcionan de cada compañía, para usarlas si una de sus ofertas tiene la suya rota.
+    buenas = {}
+    for u, e in estados.items():
+        if e == 'vivo':
+            buenas.setdefault(dominio(u), []).append(u)
+
+    cambios = {}
+    for o in ofertas:
+        url = o['fuente']
+        if estados.get(url) != 'roto':
+            continue
+        p = urllib.parse.urlparse(url)
+        dom = p.netloc.removeprefix('www.')
+        candidatos = []
+        if p.netloc.startswith('www.'):
+            candidatos.append(url.replace('://www.', '://', 1))
+        candidatos += [u for u in alternativas.get(o['id'], []) if u and u != url]
+        candidatos += buenas.get(dom, [])
+        candidatos += [f'https://{dom}/', f'https://www.{dom}/']
+        candidatos = [c for c in candidatos if not urllib.parse.urlparse(c).path.lower().endswith('.pdf')]
+        nuevo = next((c for c in candidatos if vivo(c)), None)
+        if nuevo:
+            o['fuente'] = nuevo
+            cambios[url] = nuevo
+    return cambios
+
+
 def descargar(fecha):
     url = API.format(fecha=urllib.parse.quote(fecha.strftime('%d/%m/%Y'), safe=''))
     req = urllib.request.Request(url, headers={'User-Agent': 'CasaEnVatios/1.0 (comparador de tarifas)'})
@@ -234,6 +317,7 @@ def main():
     a.add_argument('--salida', default='reglas.json')
     a.add_argument('--manuales', default='ofertas-manuales.json')
     a.add_argument('--cnmc', help='usar un JSON ya descargado de la API en lugar de descargarlo')
+    a.add_argument('--sin-comprobar-enlaces', action='store_true', help='no revisar si las webs de las ofertas abren')
     args = a.parse_args()
 
     fecha = dt.date.fromisoformat(args.fecha) if args.fecha else dt.date.today()
@@ -251,6 +335,7 @@ def main():
     ofertas = list(manuales['ofertas'])
     ids = {o['id'] for o in ofertas}
     descartes = {}
+    alternativas = {}  # id -> otras webs de la oferta, por si la principal está rota
     # Las copias internas ("clon Plan X") sobran si también está la oferta original.
     originales = {(compania(o), (o.get('nombreOferta') or '').strip().lower()) for o in crudas}
     crudas = [
@@ -269,6 +354,11 @@ def main():
             n += 1
         ids.add(conv['id'])
         ofertas.append(conv)
+        alternativas[conv['id']] = [o.get('webParticular'), o.get('webContrato')]
+
+    cambios = {} if args.sin_comprobar_enlaces else arreglar_enlaces(ofertas, alternativas)
+    for viejo, nuevo in cambios.items():
+        print(f'Enlace roto cambiado: {viejo} -> {nuevo}')
 
     cnmc = [o for o in ofertas if o.get('origen') == 'cnmc']
     if len(cnmc) < 20:
