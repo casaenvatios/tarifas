@@ -259,7 +259,7 @@
    "valido_hasta": "2026-11-30",
    "fuente": "https://www.agrienergia.com/tarifa-domestica-10/?lang=es",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -275,7 +275,7 @@
    "valido_hasta": "2026-11-30",
    "fuente": "https://www.agrienergia.com/tarifa-domestica-10/?lang=es",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -291,7 +291,7 @@
    "valido_hasta": "2030-05-31",
    "fuente": "https://airelimpioenergia.com",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -307,7 +307,7 @@
    "valido_hasta": "2027-11-29",
    "fuente": "https://logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -323,7 +323,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -339,7 +339,7 @@
    "valido_hasta": "2027-03-29",
    "fuente": "https://catgas.cat/es/tarifes-catllum-llar",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -355,7 +355,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://chcenergia.es/tarifa-luz/vehiculo-electrico/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -371,7 +371,7 @@
    "valido_hasta": "2027-03-30",
    "fuente": "https://chcenergia.es/luz/plan-estrella-duo",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 1 meses tienen otro precio o descuento. Incluye un descuento de 478,45 € que no entra en el cálculo. Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 1 meses tienen otro precio o descuento. Incluye un descuento de 478,45 € que no entra en el cálculo. Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -387,7 +387,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://chcenergia.es/solar/bateria-virtual",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -403,7 +403,7 @@
    "valido_hasta": "2027-03-01",
    "fuente": "https://chcenergia.es/solar/plan-ahorro-solar",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -419,7 +419,7 @@
    "valido_hasta": "2027-10-30",
    "fuente": "https://chcenergia.es/luz/plan-ilumina-duo-promo",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -435,7 +435,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://lumisa.es/es/tarifa-fija",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -451,7 +451,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://lumisa.es/es/tarifa-fija",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -467,7 +467,7 @@
    "valido_hasta": "2027-06-25",
    "fuente": "https://visalia.es/luz/luz-3-periodos/",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -483,7 +483,7 @@
    "valido_hasta": "2027-06-25",
    "fuente": "https://visalia.es/luz/fijo24horas/",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -499,7 +499,7 @@
    "valido_hasta": "2027-06-25",
    "fuente": "https://visalia.es/luz/tarifas-flash/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 3 meses tienen otro precio o descuento. Incluye un descuento de 59,50 € que no entra en el cálculo. Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 3 meses tienen otro precio o descuento. Incluye un descuento de 59,50 € que no entra en el cálculo. Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -515,7 +515,7 @@
    "valido_hasta": "2027-06-25",
    "fuente": "https://visalia.es/luz/tarifas-flash/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 1 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 1 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -531,7 +531,7 @@
    "valido_hasta": "2027-08-30",
    "fuente": "https://www.electricaguadassuar.es/contratacion/#tarifas",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Según la CNMC, solo se ofrece en algunos códigos postales. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor. Según la CNMC, solo se ofrece en algunos códigos postales.",
    "origen": "cnmc"
   },
   {
@@ -547,7 +547,7 @@
    "valido_hasta": "2026-11-26",
    "fuente": "https://eleiaenergia.com/nuestros-productos",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -563,7 +563,7 @@
    "valido_hasta": "2026-11-26",
    "fuente": "https://eleiaenergia.com/nuestros-productos",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -579,7 +579,7 @@
    "valido_hasta": "2027-01-20",
    "fuente": "https://elekluz.com/oferta-vigente/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -595,7 +595,7 @@
    "valido_hasta": "2027-01-20",
    "fuente": "https://elekluz.com/oferta-vigente/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -611,7 +611,7 @@
    "valido_hasta": "2026-12-01",
    "fuente": "https://www.endesa.com/es/luz-y-gas/luz/one/tarifa-one-luz-3periodos",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -627,7 +627,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -643,7 +643,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -659,7 +659,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -675,8 +675,9 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
-   "origen": "cnmc"
+   "nota": "Oferta válida solo para nuevos clientes.",
+   "origen": "cnmc",
+   "sin_web": true
   },
   {
    "id": "cnmc-energia-nufri-energia-nufri-universal-con-horarios",
@@ -691,7 +692,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -707,7 +708,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -723,8 +724,9 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
-   "origen": "cnmc"
+   "nota": "Oferta válida solo para nuevos clientes.",
+   "origen": "cnmc",
+   "sin_web": true
   },
   {
    "id": "cnmc-avm-energia-telefonico-precio-noche-y-findes",
@@ -740,7 +742,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -757,7 +759,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -774,7 +776,7 @@
    "valido_hasta": "2027-01-06",
    "fuente": "https://www.energyavm.es/luz/formula-fija-24-horas-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -791,7 +793,7 @@
    "valido_hasta": "2027-01-06",
    "fuente": "https://www.energyavm.es/luz/formula-fija-24horas-asistencia-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -808,7 +810,7 @@
    "valido_hasta": "2027-01-06",
    "fuente": "https://www.energyavm.es/luz/formula-fija-24-horas-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -825,7 +827,7 @@
    "valido_hasta": "2027-01-06",
    "fuente": "https://www.energyavm.es/luz/formula-fija-3-periodos-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -842,7 +844,7 @@
    "valido_hasta": "2027-01-06",
    "fuente": "https://www.energyavm.es/luz/formula-fija-3-periodos-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -858,7 +860,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://maisenerxia.com/contratar-luz-scf/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -874,7 +876,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://maisenerxia.com/contratar-luz-descuento-scf/",
    "comprobado": "2026-11-16",
-   "nota": "Incluye un descuento de 50,00 € que no entra en el cálculo. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Incluye un descuento de 50,00 € que no entra en el cálculo. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -891,7 +893,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://contratar.maisenerxia.com/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -907,7 +909,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil/?power=true&svaluz=false",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -923,7 +925,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil/?svaluz=false",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -939,7 +941,7 @@
    "valido_hasta": "2026-12-14",
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil-plus-36-meses/?power=true&svaluz=false",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -955,7 +957,7 @@
    "valido_hasta": "2026-12-14",
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil-plus-36-meses/",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -971,7 +973,7 @@
    "valido_hasta": "2029-09-07",
    "fuente": "https://nordy.es/tarifas",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -987,7 +989,7 @@
    "valido_hasta": "2028-02-10",
    "fuente": "https://nordy.es/tarifas",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1003,7 +1005,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://niba.es/enchufate50",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Incluye un descuento de 50,00 € que no entra en el cálculo. Oferta válida solo para nuevos clientes y consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Incluye un descuento de 50,00 € que no entra en el cálculo. Oferta válida solo para nuevos clientes y consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1019,7 +1021,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://niba.es/enchufate50",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Incluye un descuento de 50,00 € que no entra en el cálculo. Oferta válida solo para nuevos clientes y consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Incluye un descuento de 50,00 € que no entra en el cálculo. Oferta válida solo para nuevos clientes y consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1035,7 +1037,7 @@
    "valido_hasta": "2027-01-30",
    "fuente": "https://www.papernest.es/papernest-energia-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1051,7 +1053,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://ganaenergia.com/tarifas-luz/24-horas",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Incluye un descuento de 82,64 € que no entra en el cálculo. Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Incluye un descuento de 82,64 € que no entra en el cálculo. Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -1067,7 +1069,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://ganaenergia.com/tarifas-luz/24-horas",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1083,7 +1085,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://contigoenergia.com/tarifas/tarifa-luz-horas-ekoenergia/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1099,7 +1101,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://contigoenergia.com/tarifas/tarifa-de-luz-facil/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1115,7 +1117,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://contigoenergia.com/tarifas/tarifa-luz-horas/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1131,7 +1133,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://contigoenergia.com/tarifas/tarifa-de-luz-facil/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1147,7 +1149,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://contigoenergia.com/tarifas/tarifa-luz-horas/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1163,7 +1165,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -1179,7 +1181,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -1197,7 +1199,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -1215,7 +1217,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-16",
-   "nota": "Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -1231,7 +1233,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-16",
-   "nota": "Válida para nuevos clientes que cumplen ciertos requisitos (ver detalle de la oferta). Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para nuevos clientes que cumplen ciertos requisitos (ver detalle de la oferta).",
    "origen": "cnmc"
   },
   {
@@ -1247,7 +1249,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-16",
-   "nota": "Válida para nuevos clientes que cumplen ciertos requisitos (ver detalle de la oferta). Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para nuevos clientes que cumplen ciertos requisitos (ver detalle de la oferta).",
    "origen": "cnmc"
   },
   {
@@ -1263,7 +1265,7 @@
    "valido_hasta": "2027-05-31",
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1279,7 +1281,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1295,7 +1297,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://inerenergia.es/luz/hogar",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -1311,7 +1313,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://inerenergia.es/luz/hogar",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -1327,7 +1329,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://inerenergia.es/luz/hogar",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -1343,7 +1345,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://inerenergia.es/luz/hogar",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -1359,7 +1361,7 @@
    "valido_hasta": "2028-12-30",
    "fuente": "https://www.masnorte.es/ofertaeconomicaloto",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -1375,7 +1377,7 @@
    "valido_hasta": "2026-11-28",
    "fuente": "https://es.met.com/es/customers/power-tariffs/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1391,7 +1393,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://www.naturgy.es/hogar/luz/tarifa_noche/?origen=comparators7&vn=907008079&utm_source=cnmc&utm_medium=referral&utm_campaign=cnmc",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -1407,7 +1409,7 @@
    "valido_hasta": "2026-11-15",
    "fuente": "https://www.naturgy.es/negocios_y_autonomos/luz/plan_fijo_luz_DH#precios-y-condiciones",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para comercios o negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para comercios o negocios.",
    "origen": "cnmc"
   },
   {
@@ -1423,7 +1425,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://www.naturgy.es/hogar/luz/tarifa_por_uso_luz/?origen=comparators7&vn=907008079&utm_source=cnmc&utm_medium=referral&utm_campaign=cnmc",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
    "origen": "cnmc"
   },
   {
@@ -1439,7 +1441,7 @@
    "valido_hasta": "2026-11-15",
    "fuente": "https://www.naturgy.es/negocios_y_autonomos/luz/plan_fijo_luz#precios-y-condiciones",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para comercios o negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para comercios o negocios.",
    "origen": "cnmc"
   },
   {
@@ -1455,7 +1457,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.nexusenergia.com/hogar/tarifas-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1471,7 +1473,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.nexusenergia.com/hogar/tarifas-luz/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1487,7 +1489,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://nobe.es/particulares/tarifas-nobe/#tarifas",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1503,7 +1505,7 @@
    "valido_hasta": "2027-01-31",
    "fuente": "https://octopusenergy.es/precios/tarifa-ev?",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1519,7 +1521,7 @@
    "valido_hasta": "2027-01-31",
    "fuente": "https://octopusenergy.es/precios/tarifa-solar?type=electricity",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1535,7 +1537,7 @@
    "valido_hasta": "2027-01-31",
    "fuente": "https://octopusenergy.es/precios",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1551,7 +1553,7 @@
    "valido_hasta": "2027-02-01",
    "fuente": "https://octopusenergy.es/precios",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1567,7 +1569,7 @@
    "valido_hasta": "2027-02-15",
    "fuente": "https://quantiumlux.com/energia/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para consumidores domésticos y pequeños negocios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para consumidores domésticos y pequeños negocios.",
    "origen": "cnmc"
   },
   {
@@ -1583,7 +1585,7 @@
    "valido_hasta": "2026-11-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion1",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1599,7 +1601,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-te-da-mas/?#opcion2",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1615,7 +1617,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-energia-renovable/#opcion2",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1631,7 +1633,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-sin-horarios/#opcion2",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1647,7 +1649,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion1",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1663,7 +1665,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion2",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1679,7 +1681,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-energia-renovable/#opcion1",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1695,7 +1697,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-sin-horarios/#opcion1",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1711,7 +1713,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-tranquilisima/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1727,7 +1729,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1743,7 +1745,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/tarifa-sin-horarios-pyme/#opcion2",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores no domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores no domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1759,7 +1761,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1775,7 +1777,7 @@
    "valido_hasta": "2026-11-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion2",
    "comprobado": "2026-11-16",
-   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
    "origen": "cnmc"
   },
   {
@@ -1791,7 +1793,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-te-da-mas/?#opcion1",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1807,7 +1809,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.electricadealginet.com/tarifas-20td/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1823,7 +1825,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.electricadealginet.com/tarifas-20td/",
    "comprobado": "2026-11-16",
-   "nota": "Válida para cualquier consumidor. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
   },
   {
@@ -1839,7 +1841,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energiaelcorteingles.es/tarifa-beneficiate/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1855,7 +1857,7 @@
    "valido_hasta": "2027-05-29",
    "fuente": "https://www.barcelonaenergia.cat/es/tarifa-fija-clasica",
    "comprobado": "2026-11-16",
-   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Según la CNMC, solo se ofrece en algunos códigos postales. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Según la CNMC, solo se ofrece en algunos códigos postales.",
    "origen": "cnmc"
   },
   {
@@ -1871,7 +1873,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://www.urusenergy.com/energiainteligente",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos.",
    "origen": "cnmc"
   },
   {
@@ -1887,7 +1889,7 @@
    "valido_hasta": "2026-11-29",
    "fuente": "https://www.urusenergy.com/energiainteligente",
    "comprobado": "2026-11-16",
-   "nota": "Válida sólo para consumidores domésticos. Incluye servicios obligatorios: revisa sus condiciones. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Válida sólo para consumidores domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc"
   },
   {
@@ -1903,7 +1905,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://wekiwi.es/presentacion-tarifa-lorenzo/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
    "origen": "cnmc"
   },
   {
@@ -1919,7 +1921,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://wekiwi.es/presentacion-tarifa-carolina/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
    "origen": "cnmc"
   },
   {
@@ -1935,7 +1937,7 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://wekiwi.es/presentacion-tarifa-mari-calmen/",
    "comprobado": "2026-11-16",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Datos del Comparador de Ofertas de Energía de la CNMC.",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
    "origen": "cnmc"
   }
  ]

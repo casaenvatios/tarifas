@@ -187,7 +187,7 @@ def convertir(o, hoy):
         notas.append('Incluye servicios obligatorios: revisa sus condiciones.')
     if z == 'local':
         notas.append('Según la CNMC, solo se ofrece en algunos códigos postales.')
-    notas.append('Datos del Comparador de Ofertas de Energía de la CNMC.')
+    # La mención a la CNMC la enseña la app una vez, al final de la lista de tarifas.
 
     vigencia = []
     if hasta:
@@ -298,6 +298,11 @@ def arreglar_enlaces(ofertas, alternativas):
         candidatos += [f'https://{dom}/', f'https://www.{dom}/']
         candidatos = [c for c in candidatos if not urllib.parse.urlparse(c).path.lower().endswith('.pdf')]
         nuevo = next((c for c in candidatos if vivo(c)), None)
+        # Si solo queda una página general de la compañía (no la de esta oferta),
+        # la oferta no se encuentra en su web: la app lo avisa y no la recomienda la primera.
+        propias = {url.replace('://www.', '://', 1), *(u for u in alternativas.get(o['id'], []) if u)}
+        if nuevo not in propias:
+            o['sin_web'] = True
         if nuevo:
             o['fuente'] = nuevo
             cambios[url] = nuevo
