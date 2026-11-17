@@ -7,8 +7,13 @@ Junta dos fuentes:
      (https://comparador.cnmc.gob.es/api/swagger-ui/index.html). Licencia CC BY-SA 4.0:
      "información recabada y gestionada por la CNMC en el Comparador de Ofertas de Energía".
 
-De la CNMC se toman solo las ofertas de electricidad para hogares (peaje 2.0TD) con
-precio fijo por tramo. Si la API falla, no se toca reglas.json (sale con error).
+De la CNMC se toman las ofertas de electricidad para hogares (peaje 2.0TD):
+  - "ofertas": precio fijo por tramo (punta, llano, valle). Es lo único que leen las
+    versiones antiguas de la app.
+  - "ofertas_horarias": precio con horas de descuento (Octopus Sun Club, Repsol 10 horas...),
+    que solo se pueden calcular con el consumo hora a hora. Van en una clave aparte para que
+    las versiones antiguas no las calculen como si fueran de precio fijo.
+Si la API falla, no se toca reglas.json (sale con error).
 
 Uso: python actualizar_ofertas.py [--fecha AAAA-MM-DD] [--salida reglas.json] [--cnmc ofertas.json]
 """
@@ -98,6 +103,30 @@ def excedentes(descripcion):
             if 0 < v < 0.3:
                 return round(v, 6)
     return None
+
+
+def texto_oferta(o):
+    """Descripción e información adicional: algunas compañías ponen ahí los excedentes."""
+    return '\n'.join(o.get(c) or '' for c in ('descripcion', 'infoAdicional'))
+
+
+def bateria_virtual(o):
+    """La oferta guarda en euros lo que los excedentes no pueden compensar ese mes
+    (batería virtual, "wallet"). No cuenta si el texto dice que no la incluye."""
+    nombre = o.get('nombreOferta') or ''
+    if re.search(r'(?i)bater[ií]a\s+virtual', nombre):
+        return True
+    texto = texto_oferta(o)
+    if re.search(r'(?i)no\s+incluye[^.]{0,40}(bater[ií]a\s+virtual|solar\s+wallet)', texto):
+        return False
+    return bool(re.search(r'(?i)incluye[^.]{0,60}(bater[ií]a\s+virtual|solar\s+wallet)', texto))
+
+
+def cuota_bateria(o):
+    """€/mes sin IVA del servicio de batería virtual, si la oferta lo cobra aparte
+    ("Requiere la contratación del Servicio Batería 2,99 €/mes")."""
+    m = re.search(r'(?i)servicio\s+bater[ií]a[^.\n]{0,40}?(\d+[.,]\d+)\s*€\s*/\s*mes', texto_oferta(o))
+    return float(m.group(1).replace(',', '.')) if m else 0.0
 
 
 def _kwh(numero, unidad):
@@ -205,8 +234,11 @@ def convertir(o, hoy):
         'valle': round(medios['valle'], 6),
         'potencia_p1': round(medios['p1'] / 365, 6),
         'potencia_p2': round(medios['p2'] / 365, 6),
-        'excedentes': excedentes(o.get('descripcion')),
+        'excedentes': excedentes(texto_oferta(o)),
     }
+    if bateria_virtual(o):
+        oferta['bateria_virtual'] = True
+        cuota += cuota_bateria(o)
     if cuota >= 0.05:
         oferta['cuota_mes'] = round(cuota, 4)
     minimo, maximo = limites_consumo(o)
@@ -214,6 +246,151 @@ def convertir(o, hoy):
         oferta['consumo_min_kwh_año'] = round(minimo)
     if maximo:
         oferta['consumo_max_kwh_año'] = round(maximo)
+    oferta['vigencia'] = ', '.join(vigencia) if vigencia else 'Consulta las condiciones en su web'
+    if hasta:
+        oferta['valido_hasta'] = hasta
+    oferta['fuente'] = o.get('webOferta') or o.get('webContrato') or 'https://comparador.cnmc.gob.es/'
+    oferta['comprobado'] = hoy
+    oferta['nota'] = ' '.join(notas)
+    oferta['origen'] = 'cnmc'
+    return oferta, None
+
+
+def misma_oferta(a, b):
+    """La misma oferta dos veces (una comprobada a mano y otra de la CNMC): misma web y mismos precios."""
+    if dominio(a.get('fuente')) != dominio(b.get('fuente')):
+        return False
+    return all(abs((a.get(k) or 0) - (b.get(k) or 0)) < 1e-4 for k in ('punta', 'llano', 'valle', 'potencia_p1', 'potencia_p2'))
+
+
+DIAS_SEMANA = {'L': 1, 'M': 2, 'X': 3, 'J': 4, 'V': 5, 'S': 6, 'D': 7}
+
+
+def es_para_empresas(o):
+    """Ofertas de negocio (pymes, hostelería): no son para una casa."""
+    nombre = (o.get('nombreOferta') or '').lower()
+    web = (o.get('webOferta') or '').lower()
+    return bool(re.search(r'pyme|negocio|horeca|empresa', nombre)) or 'empresas' in web
+
+
+def _dia_mes(texto):
+    d, m = texto.strip().split('/')
+    return int(m), int(d)
+
+
+def bloques_horarios(franja):
+    """Horas con precio rebajado de una franja de la CNMC, o None si no se entiende.
+
+    causaFlexible 4: horas fijas ("horasDia"), numeradas por la hora en que empiezan
+    (Octopus Sun Club: 12..17 = de 12:00 a 18:00). El 24 es la medianoche, la hora 0 del
+    día siguiente: Repsol 2ª Residencia pone "15..24" para "desde las 15 h del viernes" y
+    "1..24" para el fin de semana entero. Se guarda como "medianoche": true.
+    causaFlexible 2: el cliente elige "numHoras" horas al día."""
+    bloques = []
+    for fh in franja.get('franjaHoras') or []:
+        desde_txt, hasta_txt = (fh.get('periodo') or '01/01-31/12').split('-')
+        dias = [DIAS_SEMANA[c] for c in (fh.get('dias') or '') if c in DIAS_SEMANA]
+        if not dias:
+            return None
+        bloque = {
+            'desde': '%02d-%02d' % _dia_mes(desde_txt),
+            'hasta': '%02d-%02d' % _dia_mes(hasta_txt),
+            'dias': dias,
+            'festivos': 'si' if fh.get('incluirFestivos') else ('no' if fh.get('excluirFestivos') else 'como_el_dia'),
+        }
+        causa = fh.get('causaFlexible')
+        if causa == 4:
+            horas = [int(h) for h in str(fh.get('horasDia') or '').split(',') if h.strip().isdigit()]
+            if not horas:
+                return None
+            if any(h < 0 or h > 24 for h in horas):
+                return None
+            bloque.update({'tipo': 'fijas', 'horas': sorted({h for h in horas if h < 24})})
+            if 24 in horas:
+                bloque['medianoche'] = True
+        elif causa == 2 and fh.get('numHoras'):
+            bloque.update({'tipo': 'elige', 'num_horas': int(fh['numHoras'])})
+        else:
+            return None
+        bloques.append(bloque)
+    return bloques or None
+
+
+def convertir_horaria(o, hoy):
+    """Oferta 2.0TD con horas de descuento ("Flexible" en la CNMC), o (None, motivo)."""
+    if o.get('tipoOferta') != 'Electricidad' or o.get('estado') != 'Activa':
+        return None, 'no es luz activa'
+    if (o.get('electricidad') or {}).get('tipoPlanElectricidad') != 'Flexible':
+        return None, 'no es de horas de descuento'
+    if es_para_empresas(o):
+        return None, 'para empresas'
+    periodos = o.get('periodos') or []
+    if len(periodos) != 1:
+        return None, 'horas de descuento con varios periodos'
+    p = periodos[0]
+    base, rebajas = {}, []
+    for f in p.get('franjasElectricidad') or []:
+        ref = f.get('refParams')
+        precio = f.get('precio') or {}
+        if ref in ('1HORAPUNTA', '2HORAVALLE'):
+            base[ref] = precio.get('potencia')
+        elif ref in ('3HORAPUNTA', '4HORALLANO', '5HORAVALLE'):
+            base[ref] = precio.get('energia')
+        elif f.get('franjaHoras'):
+            bloques = bloques_horarios(f)
+            if bloques is None or not precio.get('energia'):
+                return None, 'horas de descuento que no se entienden'
+            for b in bloques:
+                b['precio'] = round(precio['energia'], 6)
+            rebajas += bloques
+    if len(base) != 5 or any(v is None or v <= 0 for v in base.values()) or not rebajas:
+        return None, 'horas de descuento incompletas'
+    z = zona(o.get('territorio'))
+    if z == 'islas':
+        return None, 'solo Baleares o Canarias'
+
+    nombre_c = compania(o) or 'Comercializadora'
+    nombre_o = (o.get('nombreOferta') or '').strip()
+    hasta = (o.get('fechaHasta') or '')[:10] or None
+    notas = []
+    if o.get('limitada'):
+        notas.append(o['limitada'].strip().rstrip('.') + '.')
+    if o.get('serviciosObligatorios'):
+        notas.append('Incluye servicios obligatorios: revisa sus condiciones.')
+    if (o.get('electricidad') or {}).get('permanenciaElec'):
+        notas.append('Tiene permanencia.')
+    if any(b['tipo'] == 'elige' for b in rebajas):
+        notas.append('Tú eliges las horas con descuento: la app calcula con las horas en que más gastas.')
+    if z == 'local':
+        notas.append('Según la CNMC, solo se ofrece en algunos códigos postales.')
+    vigencia = []
+    if hasta:
+        d = dt.date.fromisoformat(hasta)
+        vigencia.append(f'Oferta hasta el {d.day}/{d.month}/{d.year}')
+    if o.get('revisionPrecios'):
+        vigencia.append(f"revisión de precios {o['revisionPrecios'].strip().lower()}")
+    cuota = max(0.0, (p.get('preciofijo') or 0) - BONO_SOCIAL_MES)
+    if bateria_virtual(o):
+        cuota += cuota_bateria(o)
+
+    oferta = {
+        'id': 'cnmc-h-' + slug(f'{nombre_c} {nombre_o}'),
+        'nombre': f'{nombre_c} · {nombre_o}',
+        'punta': round(base['3HORAPUNTA'], 6),
+        'llano': round(base['4HORALLANO'], 6),
+        'valle': round(base['5HORAVALLE'], 6),
+        'potencia_p1': round(base['1HORAPUNTA'] / 365, 6),
+        'potencia_p2': round(base['2HORAVALLE'] / 365, 6),
+        'excedentes': excedentes(texto_oferta(o)),
+        'horas_descuento': rebajas,
+    }
+    if cuota >= 0.05:
+        oferta['cuota_mes'] = round(cuota, 4)
+    if bateria_virtual(o):
+        oferta['bateria_virtual'] = True
+    pot_max = (o.get('electricidad') or {}).get('potenciaContratadaMaxima')
+    if pot_max and pot_max < 15:
+        oferta['potencia_max_kw'] = pot_max
     oferta['vigencia'] = ', '.join(vigencia) if vigencia else 'Consulta las condiciones en su web'
     if hasta:
         oferta['valido_hasta'] = hasta
@@ -348,10 +525,23 @@ def main():
         if not re.match(r'(?i)clon\s', o.get('nombreOferta') or '')
         or (compania(o), re.sub(r'(?i)^clon\s+', '', o['nombreOferta']).strip().lower()) not in originales
     ]
+    horarias = []
     for o in crudas:
         conv, motivo = convertir(o, hoy)
         if not conv:
+            hor, motivo_h = convertir_horaria(o, hoy)
+            if hor:
+                if hor['id'] not in ids:
+                    ids.add(hor['id'])
+                    horarias.append(hor)
+                    alternativas[hor['id']] = [o.get('webParticular'), o.get('webContrato')]
+                continue
+            if motivo_h not in ('no es de horas de descuento', 'no es luz activa'):
+                motivo = motivo_h
             descartes[motivo] = descartes.get(motivo, 0) + 1
+            continue
+        if any(misma_oferta(conv, m) for m in manuales['ofertas']):
+            descartes['repetida de una manual'] = descartes.get('repetida de una manual', 0) + 1
             continue
         base, n = conv['id'], 2
         while conv['id'] in ids:
@@ -361,7 +551,7 @@ def main():
         ofertas.append(conv)
         alternativas[conv['id']] = [o.get('webParticular'), o.get('webContrato')]
 
-    cambios = {} if args.sin_comprobar_enlaces else arreglar_enlaces(ofertas, alternativas)
+    cambios = {} if args.sin_comprobar_enlaces else arreglar_enlaces(ofertas + horarias, alternativas)
     for viejo, nuevo in cambios.items():
         print(f'Enlace roto cambiado: {viejo} -> {nuevo}')
 
@@ -378,13 +568,14 @@ def main():
                     '(https://comparador.cnmc.gob.es/). Licencia CC BY-SA 4.0.',
         },
         'ofertas': ofertas,
+        'ofertas_horarias': horarias,
     }
     with open(args.salida, 'w', encoding='utf-8') as f:
         json.dump(reglas, f, ensure_ascii=False, indent=1)
         f.write('\n')
     companias = {o['nombre'].split(' · ')[0] for o in cnmc}
     print(f'{args.salida}: {len(ofertas)} ofertas ({len(manuales["ofertas"])} manuales y {len(cnmc)} de la CNMC, '
-          f'{len(companias)} compañías). Descartadas: {descartes}')
+          f'{len(companias)} compañías), {len(horarias)} con horas de descuento. Descartadas: {descartes}')
     return 0
 
 

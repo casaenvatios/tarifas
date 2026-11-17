@@ -242,5 +242,18 @@
       "nota": "Precios fijos 12 meses.",
       "origen": "manual"
     }
-  ]
+  ],
+  "pvpc": {
+    "vigente_desde": "2026-01-01",
+    "potencia_p1_eur_kw_año": 30.817413,
+    "potencia_p2_eur_kw_año": 0.725423,
+    "potencia_max_kw": 10,
+    "detalle": "P1 = peaje 23,324952 + cargo 4,379461 + margen de comercialización 3,113; P2 = peaje 0,443770 + cargo 0,281653 (€/kW año). El margen solo se cobra en P1.",
+    "fuentes": {
+      "peajes": "Resolución de la CNMC de 18/12/2025, BOE-A-2025-26348",
+      "cargos": "Orden TED/1524/2025, BOE-A-2025-26705",
+      "margen": "Real Decreto 216/2014 (3,113 €/kW año)",
+      "potencia_max_kw": "El PVPC solo se puede contratar hasta 10 kW (Real Decreto 216/2014)"
+    }
+  }
 }
