@@ -2,7 +2,11 @@ name: Actualizar ofertas de la CNMC
 
 on:
   schedule:
+    # De madrugada: ofertas de la CNMC y precios del PVPC de hoy.
     - cron: '0 5 * * *'
+    # Por la tarde (21:30 en invierno, 22:30 en verano): precios del PVPC de mañana,
+    # que Red Eléctrica publica hacia las 20:15.
+    - cron: '30 20 * * *'
   workflow_dispatch: {}
 
 permissions:
@@ -18,14 +22,17 @@ jobs:
           python-version: '3.12'
       - name: Generar reglas.json
         run: python actualizar_ofertas.py --salida reglas.json
+      - name: Generar pvpc.json
+        # Si ESIOS falla, se sigue con el pvpc.json de ayer y se publican las ofertas igual.
+        run: python actualizar_pvpc.py --salida pvpc.json || echo "No se ha podido actualizar el PVPC."
       - name: Publicar si ha cambiado
         run: |
-          if git diff --quiet -- reglas.json; then
-            echo "Sin cambios en las ofertas."
+          if git diff --quiet -- reglas.json pvpc.json; then
+            echo "Sin cambios."
             exit 0
           fi
           git config user.name "casaenvatios-bot"
           git config user.email "casa.en.vatios@gmail.com"
-          git add reglas.json
-          git commit -m "Ofertas de la CNMC del $(date +%d/%m/%Y)"
+          git add reglas.json pvpc.json
+          git commit -m "Ofertas y PVPC del $(date '+%d/%m/%Y %H:%M')"
           git push
