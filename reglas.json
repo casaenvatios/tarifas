@@ -76,7 +76,8 @@
    "fuente": "https://www.repsol.es/particulares/vehiculos/movilidad-electrica/tarifa-vehiculo-electrico/",
    "comprobado": "2026-11-10",
    "nota": "Precios 12 meses. La página no publica compensación de excedentes.",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "totalenergies-pta-mas4000",
@@ -485,6 +486,23 @@
    "fuente": "https://visalia.es/luz/fijo24horas/",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos.",
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
+  },
+  {
+   "id": "cnmc-visalia-visalia-luz-fijo-plan-ahorro-3-meses",
+   "nombre": "Visalia · Visalia Luz Fijo Plan Ahorro 3 meses",
+   "punta": 0.159875,
+   "llano": 0.159875,
+   "valle": 0.159875,
+   "potencia_p1": 0.063014,
+   "potencia_p2": 0.063014,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 25/6/2027, revisión de precios anual",
+   "valido_hasta": "2027-06-25",
+   "fuente": "https://visalia.es/luz/tarifas-flash/",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 3 meses tienen otro precio o descuento. Incluye un descuento de 59,50 € que no entra en el cálculo. Válida sólo para consumidores domésticos.",
    "origen": "cnmc",
    "comprobado_web": "2026-11-19"
   },
@@ -1160,7 +1178,8 @@
    "fuente": "https://inerenergia.es/luz/hogar",
    "comprobado": "2026-11-19",
    "nota": "Válida para consumidores domésticos y pequeños negocios.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-iner-energia-tranquilidad",
@@ -1176,7 +1195,8 @@
    "fuente": "https://inerenergia.es/luz/hogar",
    "comprobado": "2026-11-19",
    "nota": "Válida para consumidores domésticos y pequeños negocios.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-iner-energia-coche-electrico",
@@ -1362,6 +1382,23 @@
    "origen": "cnmc"
   },
   {
+   "id": "cnmc-repsol-tarifa-discriminacion-horaria-con-mantenimiento-luz",
+   "nombre": "Repsol · Tarifa Discriminación Horaria con mantenimiento Luz",
+   "punta": 0.1999,
+   "llano": 0.1699,
+   "valle": 0.1399,
+   "potencia_p1": 0.129863,
+   "potencia_p2": 0.069589,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion1",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Incluye servicios obligatorios: revisa sus condiciones.",
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
+  },
+  {
    "id": "cnmc-repsol-tarifa-te-da-mas-con-mantenimiento-luz",
    "nombre": "Repsol · Tarifa Te Da Más con mantenimiento luz",
    "punta": 0.1599,
@@ -1375,7 +1412,8 @@
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-te-da-mas/?#opcion2",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-repsol-tarifa-ahorro-renovable",
@@ -1391,7 +1429,8 @@
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-energia-renovable/#opcion2",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-repsol-tarifa-sin-horarios",
@@ -1407,7 +1446,42 @@
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-sin-horarios/#opcion2",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-ahorro-potencia-con-mantenimiento-luz",
+   "nombre": "Repsol · Tarifa Ahorro Potencia con mantenimiento luz",
+   "punta": 0.2099,
+   "llano": 0.2099,
+   "valle": 0.2099,
+   "potencia_p1": 0.084431,
+   "potencia_p2": 0.001987,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion1",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-ahorro-potencia",
+   "nombre": "Repsol · Tarifa Ahorro Potencia",
+   "punta": 0.2199,
+   "llano": 0.2199,
+   "valle": 0.2199,
+   "potencia_p1": 0.084431,
+   "potencia_p2": 0.001987,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion2",
+   "comprobado": "2026-11-19",
+   "nota": "Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-repsol-tarifa-ahorro-renovable-con-mantenimiento-luz",
@@ -1423,7 +1497,8 @@
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-energia-renovable/#opcion1",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-repsol-tarifa-sin-horarios-con-mantenimiento-luz",
@@ -1455,7 +1530,8 @@
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-tranquilisima/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-repsol-tarifa-sin-horarios-pyme-con-mantenimiento-luz",
@@ -1471,7 +1547,8 @@
    "fuente": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-repsol-tarifa-sin-horarios-pyme",
@@ -1487,7 +1564,25 @@
    "fuente": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/tarifa-sin-horarios-pyme/#opcion2",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores no domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-discriminacion-horaria",
+   "nombre": "Repsol · Tarifa Discriminación Horaria",
+   "punta": 0.1999,
+   "llano": 0.1699,
+   "valle": 0.1399,
+   "potencia_p1": 0.129863,
+   "potencia_p2": 0.069589,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion2",
+   "comprobado": "2026-11-19",
+   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-repsol-tarifa-te-da-mas",
@@ -1503,7 +1598,8 @@
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-te-da-mas/?#opcion1",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-electrica-de-alginet-tarifa-estable-24h",
@@ -1619,7 +1715,8 @@
    "fuente": "https://wekiwi.es/presentacion-tarifa-mari-calmen/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "sin_web": true
   },
   {
    "id": "cnmc-wekiwi-carolina",
@@ -1635,7 +1732,8 @@
    "fuente": "https://wekiwi.es/presentacion-tarifa-carolina/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "sin_web": true
   },
   {
    "id": "cnmc-wekiwi-lorenzo",
@@ -1651,7 +1749,8 @@
    "fuente": "https://wekiwi.es/presentacion-tarifa-lorenzo/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "sin_web": true
   }
  ],
  "ofertas_horarias": [
@@ -1964,23 +2063,6 @@
    "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.024595 frente a 0.056737 €/kW día)"
   },
   {
-   "id": "cnmc-visalia-visalia-luz-fijo-plan-ahorro-3-meses",
-   "nombre": "Visalia · Visalia Luz Fijo Plan Ahorro 3 meses",
-   "punta": 0.159875,
-   "llano": 0.159875,
-   "valle": 0.159875,
-   "potencia_p1": 0.063014,
-   "potencia_p2": 0.063014,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 25/6/2027, revisión de precios anual",
-   "valido_hasta": "2027-06-25",
-   "fuente": "https://visalia.es/luz/tarifas-flash/",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 3 meses tienen otro precio o descuento. Incluye un descuento de 59,50 € que no entra en el cálculo. Válida sólo para consumidores domésticos.",
-   "origen": "cnmc",
-   "dudosa": "potencia por debajo de los peajes y cargos regulados"
-  },
-  {
    "id": "cnmc-visalia-visalia-luz-fijo-empieza-sin-pagar",
    "nombre": "Visalia · Visalia Luz Fijo Empieza sin Pagar",
    "punta": 0.149302,
@@ -2153,57 +2235,6 @@
    "dudosa": "potencia por debajo de los peajes y cargos regulados; potencia de valle muy distinta de la de sus otros planes (0.063603 frente a 0.010207 €/kW día)"
   },
   {
-   "id": "cnmc-repsol-tarifa-discriminacion-horaria-con-mantenimiento-luz",
-   "nombre": "Repsol · Tarifa Discriminación Horaria con mantenimiento Luz",
-   "punta": 0.1999,
-   "llano": 0.1699,
-   "valle": 0.1399,
-   "potencia_p1": 0.129863,
-   "potencia_p2": 0.069589,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion1",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc",
-   "dudosa": "potencia de punta muy distinta de la de sus otros planes (0.129863 frente a 0.099726 €/kW día); potencia de valle muy distinta de la de sus otros planes (0.069589 frente a 0.099726 €/kW día)"
-  },
-  {
-   "id": "cnmc-repsol-tarifa-ahorro-potencia-con-mantenimiento-luz",
-   "nombre": "Repsol · Tarifa Ahorro Potencia con mantenimiento luz",
-   "punta": 0.2099,
-   "llano": 0.2099,
-   "valle": 0.2099,
-   "potencia_p1": 0.084431,
-   "potencia_p2": 0.001987,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion1",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc",
-   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.001987 frente a 0.099726 €/kW día)"
-  },
-  {
-   "id": "cnmc-repsol-tarifa-ahorro-potencia",
-   "nombre": "Repsol · Tarifa Ahorro Potencia",
-   "punta": 0.2199,
-   "llano": 0.2199,
-   "valle": 0.2199,
-   "potencia_p1": 0.084431,
-   "potencia_p2": 0.001987,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion2",
-   "comprobado": "2026-11-19",
-   "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc",
-   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.001987 frente a 0.099726 €/kW día)"
-  },
-  {
    "id": "cnmc-repsol-tarifa-plan-ahorro-plus-con-mantenimiento-luz",
    "nombre": "Repsol · TARIFA PLAN AHORRO PLUS con mantenimiento Luz",
    "punta": 0.1299,
@@ -2219,23 +2250,6 @@
    "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
    "origen": "cnmc",
    "dudosa": "potencia por debajo de los peajes y cargos regulados; potencia de punta muy distinta de la de sus otros planes (0.068219 frente a 0.099726 €/kW día); potencia de valle muy distinta de la de sus otros planes (0.068219 frente a 0.099726 €/kW día)"
-  },
-  {
-   "id": "cnmc-repsol-tarifa-discriminacion-horaria",
-   "nombre": "Repsol · Tarifa Discriminación Horaria",
-   "punta": 0.1999,
-   "llano": 0.1699,
-   "valle": 0.1399,
-   "potencia_p1": 0.129863,
-   "potencia_p2": 0.069589,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion2",
-   "comprobado": "2026-11-19",
-   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc",
-   "dudosa": "potencia de punta muy distinta de la de sus otros planes (0.129863 frente a 0.099726 €/kW día); potencia de valle muy distinta de la de sus otros planes (0.069589 frente a 0.099726 €/kW día)"
   }
  ]
 }
