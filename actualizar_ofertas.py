@@ -276,6 +276,87 @@ def corregir(oferta, correcciones, hoy):
     return oferta, None
 
 
+CAMPOS_PRECIO = ('punta', 'llano', 'valle', 'potencia_p1', 'potencia_p2')
+
+
+def web_confirma(oferta, verificaciones, hoy, dias=14):
+    """La comprobación semanal de su web encontró estos mismos precios hace menos de [dias] días."""
+    v = verificaciones.get(oferta['id'])
+    if not v or v.get('estado') != 'coincide':
+        return None
+    if (dt.date.fromisoformat(hoy) - dt.date.fromisoformat(v['fecha'])).days > dias:
+        return None
+    precios = v.get('precios', {})
+    if any(abs((oferta.get(k) or 0) - (precios.get(k) or 0)) > 1e-6 for k in CAMPOS_PRECIO):
+        return None  # la CNMC ha cambiado los precios después de comprobarlos
+    return v['fecha']
+
+
+def compania_de(o):
+    return o['nombre'].split(' · ')[0].strip().lower()
+
+
+def revisar(ofertas, verificaciones, anteriores, minimo_p1, minimo_p2, hoy):
+    """Filtros automáticos contra datos erróneos. Devuelve (buenas, dudosas, informe).
+
+    Lo único que confirma un precio es encontrarlo en la web de la compañía
+    (verificar_webs.py, cada semana): esas ofertas llevan "comprobado_web". La app
+    solo recomienda las confirmadas (o comprobadas a mano).
+
+    Estos filtros solo levantan sospechas (pueden ser precios reales):
+    - Potencia por debajo de los peajes y cargos regulados.
+    - Potencia a más de un 30 % de la mediana de los planes de su compañía (así se
+      habría visto el error de Imagina).
+    - Un precio que cambia más de un 20 % de un día para otro.
+    Una oferta sospechosa y sin confirmar va a "ofertas_dudosas" con el motivo: la
+    app la enseña con el aviso y las versiones antiguas, que no leen esa clave, no la
+    ven. Vuelve sola cuando su web confirma los precios. Las ofertas comprobadas a
+    mano no pasan estos filtros.
+    """
+    previas = {o['id']: o for o in anteriores}
+    por_compania = {}
+    for o in ofertas:
+        por_compania.setdefault(compania_de(o), []).append(o)
+
+    def mediana(xs):
+        xs = sorted(xs)
+        n = len(xs)
+        return xs[n // 2] if n % 2 else (xs[n // 2 - 1] + xs[n // 2]) / 2
+
+    buenas, dudosas, informe = [], [], []
+    for o in ofertas:
+        motivos = []
+        if o.get('origen') == 'cnmc':
+            if (o.get('potencia_p1') or 0) < minimo_p1 - 1e-6 or (o.get('potencia_p2') or 0) < minimo_p2 - 1e-6:
+                motivos.append('potencia por debajo de los peajes y cargos regulados')
+            hermanas = [x for x in por_compania[compania_de(o)] if x is not o]
+            for k in ('potencia_p1', 'potencia_p2'):
+                if len(hermanas) >= 1:
+                    m = mediana([x.get(k) or 0 for x in por_compania[compania_de(o)]])
+                    if m > 0 and abs((o.get(k) or 0) - m) / m > 0.30:
+                        tramo = 'punta' if k == 'potencia_p1' else 'valle'
+                        motivos.append(f'potencia de {tramo} muy distinta de la de sus otros planes '
+                                       f'({o.get(k)} frente a {round(m, 6)} €/kW día)')
+            antes = previas.get(o['id'])
+            if antes:
+                for k in CAMPOS_PRECIO:
+                    a, b = antes.get(k) or 0, o.get(k) or 0
+                    if a > 0 and abs(b - a) / a > 0.20:
+                        nombre = {'potencia_p1': 'potencia de punta', 'potencia_p2': 'potencia de valle'}.get(k, k)
+                        motivos.append(f'{nombre} ha cambiado más de un 20 % desde ayer ({a} -> {b})')
+        confirmada = web_confirma(o, verificaciones, hoy)
+        if confirmada:
+            o['comprobado_web'] = confirmada
+        if motivos and not confirmada:
+            d = dict(o)
+            d['dudosa'] = '; '.join(motivos)
+            dudosas.append(d)
+            informe.append(f"- **{o['nombre']}** (`{o['id']}`): {d['dudosa']}. {o.get('fuente', '')}")
+        else:
+            buenas.append(o)
+    return buenas, dudosas, informe
+
+
 def misma_oferta(a, b):
     """La misma oferta dos veces (una comprobada a mano y otra de la CNMC): misma web y mismos precios."""
     if dominio(a.get('fuente')) != dominio(b.get('fuente')):
@@ -520,6 +601,8 @@ def main():
     a.add_argument('--manuales', default='ofertas-manuales.json')
     a.add_argument('--cnmc', help='usar un JSON ya descargado de la API en lugar de descargarlo')
     a.add_argument('--sin-comprobar-enlaces', action='store_true', help='no revisar si las webs de las ofertas abren')
+    a.add_argument('--verificaciones', default='verificaciones.json', help='resultado de verificar_webs.py')
+    a.add_argument('--informe', default='informe-dudosas.md', help='lista de ofertas apartadas (para el aviso)')
     args = a.parse_args()
 
     fecha = dt.date.fromisoformat(args.fecha) if args.fecha else dt.date.today()
@@ -582,6 +665,29 @@ def main():
     for viejo, nuevo in cambios.items():
         print(f'Enlace roto cambiado: {viejo} -> {nuevo}')
 
+    # Filtros automáticos: las ofertas con datos que no cuadran se apartan en "ofertas_dudosas"
+    # (las versiones de la app hasta la 1.0.13+22 no leen esa clave, así que no las ven).
+    try:
+        verificaciones = json.load(open(args.verificaciones, encoding='utf-8')).get('ofertas', {})
+    except (OSError, ValueError):
+        verificaciones = {}
+    try:
+        anteriores = json.load(open(args.salida, encoding='utf-8')).get('ofertas', [])
+    except (OSError, ValueError):
+        anteriores = []
+    pvpc = manuales.get('pvpc', {})
+    # Peajes y cargos de potencia (€/kW día): el término de potencia del PVPC menos su margen de comercialización.
+    minimo_p1 = (pvpc.get('potencia_p1_eur_kw_año', 30.817413) - 3.113) / 365
+    minimo_p2 = pvpc.get('potencia_p2_eur_kw_año', 0.725423) / 365
+    ofertas, dudosas, informe = revisar(ofertas, verificaciones, anteriores, minimo_p1, minimo_p2, hoy)
+    with open(args.informe, 'w', encoding='utf-8') as f:
+        if informe:
+            f.write(f'Ofertas sospechosas el {hoy}: sus datos no cuadran y su web no los ha confirmado. La app las '
+                    'enseña con un aviso y nunca las recomienda. Vuelven solas cuando la comprobación semanal de su web '
+                    'encuentra esos precios o la CNMC los corrige. No hace falta hacer nada.\n\n')
+            f.write('\n'.join(informe) + '\n')
+    confirmadas = sum(1 for o in ofertas if o.get('comprobado_web'))
+
     cnmc = [o for o in ofertas if o.get('origen') == 'cnmc']
     if len(cnmc) < 20:
         print(f'Solo {len(cnmc)} ofertas válidas de la CNMC: algo va mal. No se cambia {args.salida}.', file=sys.stderr)
@@ -596,14 +702,17 @@ def main():
         },
         'ofertas': ofertas,
         'ofertas_horarias': horarias,
+        'ofertas_dudosas': dudosas,
     }
     with open(args.salida, 'w', encoding='utf-8') as f:
         json.dump(reglas, f, ensure_ascii=False, indent=1)
         f.write('\n')
     companias = {o['nombre'].split(' · ')[0] for o in cnmc}
     print(f'{args.salida}: {len(ofertas)} ofertas ({len(manuales["ofertas"])} manuales y {len(cnmc)} de la CNMC, '
-          f'{len(companias)} compañías), {len(horarias)} con horas de descuento, {corregidas} corregidas a mano. '
-          f'Descartadas: {descartes}')
+          f'{len(companias)} compañías), {len(horarias)} con horas de descuento, {corregidas} corregidas a mano, '
+          f'{confirmadas} confirmadas en su web, {len(dudosas)} apartadas por dudosas. Descartadas: {descartes}')
+    for linea in informe:
+        print('Apartada:', linea)
     return 0
 
 

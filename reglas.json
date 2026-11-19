@@ -28,7 +28,8 @@
    "fuente": "https://www.naturgy.es/hogar/luz/tarifa_noche",
    "comprobado": "2026-11-10",
    "nota": "La web muestra también precios rebajados (valle 0,0809) sin explicar condiciones ni duración.",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "iberdrola-online-3p",
@@ -59,7 +60,8 @@
    "fuente": "https://www.endesa.com/es/luz-y-gas/luz/one/tarifa-one-luz-3periodos",
    "comprobado": "2026-11-10",
    "nota": "Con el 10 % de descuento en la energía el primer año; después 0,2249 / 0,1489 / 0,1229 €/kWh. Potencia 34,187694 €/kW año. Sin permanencia.",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "repsol-ve",
@@ -89,7 +91,8 @@
    "fuente": "https://www.totalenergies.es/es/hogares/tarifas-luz/a-tu-aire-programa-tu-ahorro",
    "comprobado": "2026-11-10",
    "nota": "Precio válido desde el 16/10/2026 para consumos superiores a 4.000 kWh/año.",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "totalenergies-pta-menos4000",
@@ -105,7 +108,8 @@
    "comprobado": "2026-11-10",
    "nota": "Solo para consumos inferiores a 4.000 kWh/año.",
    "consumo_max_kwh_año": 4000,
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "octopus-3",
@@ -166,7 +170,8 @@
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil/",
    "comprobado": "2026-11-10",
    "nota": "Precio único fijo 12 meses, sin permanencia. 40 € por transferencia a los dos meses si se contrata online hasta el 30/11/2026 (no incluido en el cálculo).",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "plenitude-facil-mas5",
@@ -183,7 +188,8 @@
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil/",
    "comprobado": "2026-11-10",
    "nota": "Precio único fijo 12 meses, sin permanencia. 40 € por transferencia a los dos meses si se contrata online hasta el 30/11/2026 (no incluido en el cálculo).",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "lucera-fijo",
@@ -198,7 +204,8 @@
    "fuente": "https://lucera.es/tarifas-luz/precio-fijo",
    "comprobado": "2026-11-10",
    "nota": "Precio único fijo 12 meses, sin permanencia. En la primera revisión el precio máximo sería 0,160 €/kWh.",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "gana-tramos",
@@ -229,7 +236,8 @@
    "fuente": "https://www.pepeenergy.com/tarifas-luz/tarifa-estable-luz",
    "comprobado": "2026-11-10",
    "nota": "Cuota de 4 €/mes con IVA (gratis para clientes de Pepephone). Precio revisable cada 6 meses. Excedentes a precio de mercado (octubre de 2026: 0,082909 €/kWh).",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "niba-tres",
@@ -244,7 +252,8 @@
    "fuente": "https://niba.es/contratar-luz",
    "comprobado": "2026-11-10",
    "nota": "Precios fijos 12 meses.",
-   "origen": "manual"
+   "origen": "manual",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-agri-energia-tarifa-10-eficient",
@@ -260,7 +269,8 @@
    "fuente": "https://www.agrienergia.com/tarifa-domestica-10/?lang=es",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-agri-energia-tarifa-10-tranquilidad",
@@ -276,7 +286,8 @@
    "fuente": "https://www.agrienergia.com/tarifa-domestica-10/?lang=es",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-aire-limpio-energia-tarifa-hogar",
@@ -340,7 +351,8 @@
    "fuente": "https://logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-logos-energia-delta-fijo-hogar-unico",
@@ -356,7 +368,8 @@
    "fuente": "https://logosenergia.es/tarifas-de-energia/tarifas-hogar/tarifa-de-luz-para-el-hogar",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-catgas-2-0tdl",
@@ -372,7 +385,8 @@
    "fuente": "https://catgas.cat/es/tarifes-catllum-llar",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-chc-energia-plan-vehiculo-electrico",
@@ -441,54 +455,6 @@
    "origen": "cnmc"
   },
   {
-   "id": "cnmc-chc-energia-plan-ilumina-duo-promo",
-   "nombre": "CHC Energía · Plan Ilumina Dúo Promo",
-   "punta": 0.181871,
-   "llano": 0.181871,
-   "valle": 0.181871,
-   "potencia_p1": 0.078144,
-   "potencia_p2": 0.059938,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/10/2027, revisión de precios anual",
-   "valido_hasta": "2027-10-30",
-   "fuente": "https://chcenergia.es/luz/plan-ilumina-duo-promo",
-   "comprobado": "2026-11-19",
-   "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-lumisa-2-0td-3-periodos",
-   "nombre": "Lumisa · 2.0TD 3 periodos",
-   "punta": 0.280941,
-   "llano": 0.186824,
-   "valle": 0.139765,
-   "potencia_p1": 0.08888,
-   "potencia_p2": 0.08888,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://lumisa.es/es/tarifa-fija",
-   "comprobado": "2026-11-19",
-   "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-lumisa-2-0td-precio-fijo-24h",
-   "nombre": "Lumisa · 2.0TD Precio Fijo 24h",
-   "punta": 0.125141,
-   "llano": 0.125141,
-   "valle": 0.125141,
-   "potencia_p1": 0.118638,
-   "potencia_p2": 0.024595,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://lumisa.es/es/tarifa-fija",
-   "comprobado": "2026-11-19",
-   "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
-  },
-  {
    "id": "cnmc-visalia-visalia-3-precios",
    "nombre": "Visalia · Visalia 3 Precios",
    "punta": 0.260402,
@@ -502,7 +468,8 @@
    "fuente": "https://visalia.es/luz/luz-3-periodos/",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-visalia-fijo-24-h",
@@ -518,39 +485,8 @@
    "fuente": "https://visalia.es/luz/fijo24horas/",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-visalia-visalia-luz-fijo-plan-ahorro-3-meses",
-   "nombre": "Visalia · Visalia Luz Fijo Plan Ahorro 3 meses",
-   "punta": 0.159875,
-   "llano": 0.159875,
-   "valle": 0.159875,
-   "potencia_p1": 0.063014,
-   "potencia_p2": 0.063014,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 25/6/2027, revisión de precios anual",
-   "valido_hasta": "2027-06-25",
-   "fuente": "https://visalia.es/luz/tarifas-flash/",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 3 meses tienen otro precio o descuento. Incluye un descuento de 59,50 € que no entra en el cálculo. Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-visalia-visalia-luz-fijo-empieza-sin-pagar",
-   "nombre": "Visalia · Visalia Luz Fijo Empieza sin Pagar",
-   "punta": 0.149302,
-   "llano": 0.149302,
-   "valle": 0.149302,
-   "potencia_p1": 0.093151,
-   "potencia_p2": 0.093151,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 25/6/2027, revisión de precios anual",
-   "valido_hasta": "2027-06-25",
-   "fuente": "https://visalia.es/luz/tarifas-flash/",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 1 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-electrica-de-guadassuar-2-0td-fija",
@@ -566,39 +502,8 @@
    "fuente": "https://www.electricaguadassuar.es/contratacion/#tarifas",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor. Según la CNMC, solo se ofrece en algunos códigos postales.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-eleia-energia-tu-decides-3",
-   "nombre": "Eleia Energía · TU DECIDES 3",
-   "punta": 0.445053,
-   "llano": 0.32478,
-   "valle": 0.301563,
-   "potencia_p1": 0.089601,
-   "potencia_p2": 0.015686,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 26/11/2026, revisión de precios anual",
-   "valido_hasta": "2026-11-26",
-   "fuente": "https://eleiaenergia.com/nuestros-productos",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-eleia-energia-balance-of-energy-3",
-   "nombre": "Eleia Energía · BALANCE OF ENERGY 3",
-   "punta": 0.241428,
-   "llano": 0.241428,
-   "valle": 0.241428,
-   "potencia_p1": 0.0929,
-   "potencia_p2": 0.0929,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 26/11/2026, revisión de precios anual",
-   "valido_hasta": "2026-11-26",
-   "fuente": "https://eleiaenergia.com/nuestros-productos",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-elekluz-2-0td-on-line-precio-unico",
@@ -646,7 +551,8 @@
    "fuente": "https://www.endesa.com/es/luz-y-gas/luz/one/tarifa-one-luz-3periodos",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-energia-nufri-energia-nufri-solar",
@@ -657,22 +563,6 @@
    "potencia_p1": 0.111519,
    "potencia_p2": 0.037604,
    "excedentes": 0.08,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.energianufri.com/es/tarifas-luz",
-   "comprobado": "2026-11-19",
-   "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-energia-nufri-energia-nufri-universal-con-horarios",
-   "nombre": "Energía Nufri · ENERGIA NUFRI - UNIVERSAL CON HORARIOS",
-   "punta": 0.316077,
-   "llano": 0.227382,
-   "valle": 0.184506,
-   "potencia_p1": 0.08373,
-   "potencia_p2": 0.009815,
-   "excedentes": 0.04,
    "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.energianufri.com/es/tarifas-luz",
@@ -715,54 +605,6 @@
    "sin_web": true
   },
   {
-   "id": "cnmc-energia-nufri-energia-nufri-universal-sin-horarios",
-   "nombre": "Energía Nufri · ENERGIA NUFRI - UNIVERSAL SIN HORARIOS",
-   "punta": 0.237742,
-   "llano": 0.237742,
-   "valle": 0.237742,
-   "potencia_p1": 0.08373,
-   "potencia_p2": 0.009815,
-   "excedentes": 0.04,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.energianufri.com/es/tarifas-luz",
-   "comprobado": "2026-11-19",
-   "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-energia-nufri-energia-nufri-con-horarios",
-   "nombre": "Energía Nufri · ENERGIA NUFRI - CON HORARIOS",
-   "punta": 0.270035,
-   "llano": 0.181338,
-   "valle": 0.138463,
-   "potencia_p1": 0.088231,
-   "potencia_p2": 0.088289,
-   "excedentes": 0.04,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.energianufri.com/es/tarifas-luz",
-   "comprobado": "2026-11-19",
-   "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-energia-nufri-energia-nufri-sin-horarios",
-   "nombre": "Energía Nufri · ENERGIA NUFRI - SIN HORARIOS",
-   "punta": 0.191699,
-   "llano": 0.191699,
-   "valle": 0.191699,
-   "potencia_p1": 0.088231,
-   "potencia_p2": 0.088289,
-   "excedentes": 0.04,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.energianufri.com/es/tarifas-luz",
-   "comprobado": "2026-11-19",
-   "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
-  },
-  {
    "id": "cnmc-avm-energia-formula-fija-unica-24horas",
    "nombre": "AVM Energía · Fórmula Fija Única 24HORAS",
    "punta": 0.117,
@@ -777,7 +619,8 @@
    "fuente": "https://www.energyavm.es/luz/formula-fija-24-horas-luz/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-avm-energia-telefonico-flexible-3-periodos",
@@ -794,7 +637,8 @@
    "fuente": "https://www.energyavm.es/luz/formula-fija-3-periodos-luz/",
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-avm-energia-formula-fija-unica-24horas-asistencia",
@@ -811,7 +655,8 @@
    "fuente": "https://www.energyavm.es/luz/formula-fija-24horas-asistencia-luz/",
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-avm-energia-telefonico-precio-unico",
@@ -828,41 +673,8 @@
    "fuente": "https://www.energyavm.es/luz/formula-fija-24-horas-luz/",
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-avm-energia-formula-fija-noche-y-findes",
-   "nombre": "AVM Energía · Fórmula Fija NOCHE Y FINDES",
-   "punta": 0.169915,
-   "llano": 0.169915,
-   "valle": 0.10965,
-   "potencia_p1": 0.102252,
-   "potencia_p2": 0.05114,
-   "excedentes": null,
-   "consumo_max_kwh_año": 6000,
-   "vigencia": "Oferta hasta el 29/11/2026, revisión de precios anual",
-   "valido_hasta": "2026-11-29",
-   "fuente": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-avm-energia-telefonico-precio-noche-y-findes",
-   "nombre": "AVM Energía · TELEFÓNICO. PRECIO NOCHE Y FINDES",
-   "punta": 0.1999,
-   "llano": 0.1999,
-   "valle": 0.129,
-   "potencia_p1": 0.102252,
-   "potencia_p2": 0.05114,
-   "excedentes": null,
-   "consumo_max_kwh_año": 6000,
-   "vigencia": "Oferta hasta el 29/11/2026, revisión de precios anual",
-   "valido_hasta": "2026-11-29",
-   "fuente": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/",
-   "comprobado": "2026-11-19",
-   "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-avm-energia-formula-fija-3-periodos",
@@ -879,7 +691,8 @@
    "fuente": "https://www.energyavm.es/luz/formula-fija-3-periodos-luz/",
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-mais-enerxia-mais-estable",
@@ -944,7 +757,8 @@
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil-plus-36-meses/",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-plenitude-tarifa-facil-plus-36-meses-2",
@@ -960,7 +774,8 @@
    "fuente": "https://eniplenitude.es/hogar/tarifas-luz/facil-plus-36-meses/?power=true&svaluz=false",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-nordy-tarifa-24-h",
@@ -1008,7 +823,8 @@
    "fuente": "https://estabanell.com/es/energia/horarios-ahorro/?_gl=1*1op60j7*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAqabXBhBUEiwAw_SQpXo_n9VI-c6be_JahvzO-AycvuXRegs8ZcauU87M-lDTX8qqJUgVVRoCbq4QAvD_BwE&gbraid=0AAAAABptzbT3nG70ba-FHtSBtImCQYL8Z",
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-estabanell-tarifa-de-luz-24-horas",
@@ -1024,7 +840,8 @@
    "fuente": "https://estabanell.com/es/energia/sin-horarios/?_gl=1*148aa9k*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAqabXBhBUEiwAw_SQpXo_n9VI-c6be_JahvzO-AycvuXRegs8ZcauU87M-lDTX8qqJUgVVRoCbq4QAvD_BwE&gbraid=0AAAAABptzbT3nG70ba-FHtSBtImCQYL8Z",
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-niba-niba-zen",
@@ -1040,7 +857,8 @@
    "fuente": "https://niba.es/enchufate50",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Incluye un descuento de 50,00 € que no entra en el cálculo. Oferta válida solo para nuevos clientes y consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-papernest-energia-tarifa-24h",
@@ -1120,7 +938,8 @@
    "fuente": "https://contigoenergia.com/tarifas/tarifa-de-luz-facil/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-contigo-energia-tarifa-luz-horas",
@@ -1134,22 +953,6 @@
    "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
    "valido_hasta": "2026-12-30",
    "fuente": "https://contigoenergia.com/tarifas/tarifa-luz-horas/",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-contigo-energia-tarifa-facil-2",
-   "nombre": "Contigo Energía · Tarifa Facil",
-   "punta": 0.1399,
-   "llano": 0.1399,
-   "valle": 0.1399,
-   "potencia_p1": 0.063603,
-   "potencia_p2": 0.063603,
-   "excedentes": 0.03,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://contigoenergia.com/tarifas/tarifa-de-luz-facil/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
    "origen": "cnmc"
@@ -1185,7 +988,8 @@
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes. Solo para consumos de hasta 4 MWh al año (web de Imagina).",
    "origen": "cnmc",
-   "consumo_max_kwh_año": 4000
+   "consumo_max_kwh_año": 4000,
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-imagina-energia-plan-base-sin-horas",
@@ -1202,7 +1006,8 @@
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes. Solo para consumos de hasta 4 MWh al año (web de Imagina).",
    "origen": "cnmc",
-   "consumo_max_kwh_año": 4000
+   "consumo_max_kwh_año": 4000,
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-imagina-energia-plan-base-sin-horas-4-8-mwh",
@@ -1220,7 +1025,8 @@
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-19",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-imagina-energia-plan-base-noche-y-findes-4-8-mwh",
@@ -1254,7 +1060,8 @@
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-19",
    "nota": "Válida para nuevos clientes que cumplen ciertos requisitos (ver detalle de la oferta).",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-hs-comercializadora-20td-digital",
@@ -1270,7 +1077,8 @@
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-19",
    "nota": "Válida para nuevos clientes que cumplen ciertos requisitos (ver detalle de la oferta).",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-hs-comercializadora-eficiente-20td",
@@ -1286,7 +1094,8 @@
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-hs-comercializadora-eficiente-20td-24-h",
@@ -1302,7 +1111,8 @@
    "fuente": "https://www.hscomercializadora.com/tarifas-precios-periodo-3/hogar#verPrecios",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-iberdrola-2-0td-plan-online-3-precios-0-10kw",
@@ -1414,7 +1224,8 @@
    "fuente": "https://es.met.com/es/customers/power-tariffs/",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-naturgy-por-uso-luz",
@@ -1430,7 +1241,8 @@
    "fuente": "https://www.naturgy.es/hogar/luz/tarifa_por_uso_luz/?origen=comparators7&vn=907008079&utm_source=cnmc&utm_medium=referral&utm_campaign=cnmc",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-naturgy-plan-fijo-luz-2-0td-trihoraria",
@@ -1446,7 +1258,8 @@
    "fuente": "https://www.naturgy.es/negocios_y_autonomos/luz/plan_fijo_luz_DH#precios-y-condiciones",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para comercios o negocios.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-nexus-energia-luz-eficiente",
@@ -1462,7 +1275,8 @@
    "fuente": "https://www.nexusenergia.com/hogar/tarifas-luz/",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-nexus-energia-luz-estable",
@@ -1478,7 +1292,8 @@
    "fuente": "https://www.nexusenergia.com/hogar/tarifas-luz/",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-nobe-tarifa-tipo-2-0-td",
@@ -1494,7 +1309,8 @@
    "fuente": "https://nobe.es/particulares/tarifas-nobe/#tarifas",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-octopus-energy-octopus-go-vehiculo-electrico",
@@ -1546,22 +1362,6 @@
    "origen": "cnmc"
   },
   {
-   "id": "cnmc-repsol-tarifa-discriminacion-horaria-con-mantenimiento-luz",
-   "nombre": "Repsol · Tarifa Discriminación Horaria con mantenimiento Luz",
-   "punta": 0.1999,
-   "llano": 0.1699,
-   "valle": 0.1399,
-   "potencia_p1": 0.129863,
-   "potencia_p2": 0.069589,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion1",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
-  },
-  {
    "id": "cnmc-repsol-tarifa-te-da-mas-con-mantenimiento-luz",
    "nombre": "Repsol · Tarifa Te Da Más con mantenimiento luz",
    "punta": 0.1599,
@@ -1605,38 +1405,6 @@
    "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
    "valido_hasta": "2026-12-30",
    "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-sin-horarios/#opcion2",
-   "comprobado": "2026-11-19",
-   "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-repsol-tarifa-ahorro-potencia-con-mantenimiento-luz",
-   "nombre": "Repsol · Tarifa Ahorro Potencia con mantenimiento luz",
-   "punta": 0.2099,
-   "llano": 0.2099,
-   "valle": 0.2099,
-   "potencia_p1": 0.084431,
-   "potencia_p2": 0.001987,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion1",
-   "comprobado": "2026-11-19",
-   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-repsol-tarifa-ahorro-potencia",
-   "nombre": "Repsol · Tarifa Ahorro Potencia",
-   "punta": 0.2199,
-   "llano": 0.2199,
-   "valle": 0.2199,
-   "potencia_p1": 0.084431,
-   "potencia_p2": 0.001987,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion2",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
    "origen": "cnmc"
@@ -1722,38 +1490,6 @@
    "origen": "cnmc"
   },
   {
-   "id": "cnmc-repsol-tarifa-plan-ahorro-plus-con-mantenimiento-luz",
-   "nombre": "Repsol · TARIFA PLAN AHORRO PLUS con mantenimiento Luz",
-   "punta": 0.1299,
-   "llano": 0.1299,
-   "valle": 0.1299,
-   "potencia_p1": 0.068219,
-   "potencia_p2": 0.068219,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/",
-   "comprobado": "2026-11-19",
-   "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
-  },
-  {
-   "id": "cnmc-repsol-tarifa-discriminacion-horaria",
-   "nombre": "Repsol · Tarifa Discriminación Horaria",
-   "punta": 0.1999,
-   "llano": 0.1699,
-   "valle": 0.1399,
-   "potencia_p1": 0.129863,
-   "potencia_p2": 0.069589,
-   "excedentes": null,
-   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
-   "valido_hasta": "2026-12-30",
-   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion2",
-   "comprobado": "2026-11-19",
-   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc"
-  },
-  {
    "id": "cnmc-repsol-tarifa-te-da-mas",
    "nombre": "Repsol · Tarifa Te Da Más",
    "punta": 0.1699,
@@ -1783,7 +1519,8 @@
    "fuente": "https://www.electricadealginet.com/tarifas-20td/",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-electrica-de-alginet-tarifa-estable-3-periodos",
@@ -1799,7 +1536,8 @@
    "fuente": "https://www.electricadealginet.com/tarifas-20td/",
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-energia-el-corte-ingles-beneficiate",
@@ -1847,7 +1585,8 @@
    "fuente": "https://www.urusenergy.com/energiainteligente",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-urus-energy-urus-24h",
@@ -1863,7 +1602,8 @@
    "fuente": "https://www.urusenergy.com/energiainteligente",
    "comprobado": "2026-11-19",
    "nota": "Válida sólo para consumidores domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "comprobado_web": "2026-11-19"
   },
   {
    "id": "cnmc-wekiwi-maricalmen",
@@ -2169,6 +1909,333 @@
    "comprobado": "2026-11-19",
    "nota": "Válida para cualquier consumidor. Tiene permanencia.",
    "origen": "cnmc"
+  }
+ ],
+ "ofertas_dudosas": [
+  {
+   "id": "cnmc-chc-energia-plan-ilumina-duo-promo",
+   "nombre": "CHC Energía · Plan Ilumina Dúo Promo",
+   "punta": 0.181871,
+   "llano": 0.181871,
+   "valle": 0.181871,
+   "potencia_p1": 0.078144,
+   "potencia_p2": 0.059938,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/10/2027, revisión de precios anual",
+   "valido_hasta": "2027-10-30",
+   "fuente": "https://chcenergia.es/luz/plan-ilumina-duo-promo",
+   "comprobado": "2026-11-19",
+   "nota": "Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia de punta muy distinta de la de sus otros planes (0.078144 frente a 0.119589 €/kW día); potencia de valle muy distinta de la de sus otros planes (0.059938 frente a 0.111959 €/kW día)"
+  },
+  {
+   "id": "cnmc-lumisa-2-0td-3-periodos",
+   "nombre": "Lumisa · 2.0TD 3 periodos",
+   "punta": 0.280941,
+   "llano": 0.186824,
+   "valle": 0.139765,
+   "potencia_p1": 0.08888,
+   "potencia_p2": 0.08888,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://lumisa.es/es/tarifa-fija",
+   "comprobado": "2026-11-19",
+   "nota": "Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.08888 frente a 0.056737 €/kW día)"
+  },
+  {
+   "id": "cnmc-lumisa-2-0td-precio-fijo-24h",
+   "nombre": "Lumisa · 2.0TD Precio Fijo 24h",
+   "punta": 0.125141,
+   "llano": 0.125141,
+   "valle": 0.125141,
+   "potencia_p1": 0.118638,
+   "potencia_p2": 0.024595,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://lumisa.es/es/tarifa-fija",
+   "comprobado": "2026-11-19",
+   "nota": "Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.024595 frente a 0.056737 €/kW día)"
+  },
+  {
+   "id": "cnmc-visalia-visalia-luz-fijo-plan-ahorro-3-meses",
+   "nombre": "Visalia · Visalia Luz Fijo Plan Ahorro 3 meses",
+   "punta": 0.159875,
+   "llano": 0.159875,
+   "valle": 0.159875,
+   "potencia_p1": 0.063014,
+   "potencia_p2": 0.063014,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 25/6/2027, revisión de precios anual",
+   "valido_hasta": "2027-06-25",
+   "fuente": "https://visalia.es/luz/tarifas-flash/",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 3 meses tienen otro precio o descuento. Incluye un descuento de 59,50 € que no entra en el cálculo. Válida sólo para consumidores domésticos.",
+   "origen": "cnmc",
+   "dudosa": "potencia por debajo de los peajes y cargos regulados"
+  },
+  {
+   "id": "cnmc-visalia-visalia-luz-fijo-empieza-sin-pagar",
+   "nombre": "Visalia · Visalia Luz Fijo Empieza sin Pagar",
+   "punta": 0.149302,
+   "llano": 0.149302,
+   "valle": 0.149302,
+   "potencia_p1": 0.093151,
+   "potencia_p2": 0.093151,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 25/6/2027, revisión de precios anual",
+   "valido_hasta": "2027-06-25",
+   "fuente": "https://visalia.es/luz/tarifas-flash/",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 1 meses tienen otro precio o descuento. Válida sólo para consumidores domésticos.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.093151 frente a 0.069863 €/kW día)"
+  },
+  {
+   "id": "cnmc-eleia-energia-tu-decides-3",
+   "nombre": "Eleia Energía · TU DECIDES 3",
+   "punta": 0.445053,
+   "llano": 0.32478,
+   "valle": 0.301563,
+   "potencia_p1": 0.089601,
+   "potencia_p2": 0.015686,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 26/11/2026, revisión de precios anual",
+   "valido_hasta": "2026-11-26",
+   "fuente": "https://eleiaenergia.com/nuestros-productos",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.015686 frente a 0.054293 €/kW día)"
+  },
+  {
+   "id": "cnmc-eleia-energia-balance-of-energy-3",
+   "nombre": "Eleia Energía · BALANCE OF ENERGY 3",
+   "punta": 0.241428,
+   "llano": 0.241428,
+   "valle": 0.241428,
+   "potencia_p1": 0.0929,
+   "potencia_p2": 0.0929,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 26/11/2026, revisión de precios anual",
+   "valido_hasta": "2026-11-26",
+   "fuente": "https://eleiaenergia.com/nuestros-productos",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.0929 frente a 0.054293 €/kW día)"
+  },
+  {
+   "id": "cnmc-energia-nufri-energia-nufri-universal-con-horarios",
+   "nombre": "Energía Nufri · ENERGIA NUFRI - UNIVERSAL CON HORARIOS",
+   "punta": 0.316077,
+   "llano": 0.227382,
+   "valle": 0.184506,
+   "potencia_p1": 0.08373,
+   "potencia_p2": 0.009815,
+   "excedentes": 0.04,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.energianufri.com/es/tarifas-luz",
+   "comprobado": "2026-11-19",
+   "nota": "Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.009815 frente a 0.034864 €/kW día)"
+  },
+  {
+   "id": "cnmc-energia-nufri-energia-nufri-universal-sin-horarios",
+   "nombre": "Energía Nufri · ENERGIA NUFRI - UNIVERSAL SIN HORARIOS",
+   "punta": 0.237742,
+   "llano": 0.237742,
+   "valle": 0.237742,
+   "potencia_p1": 0.08373,
+   "potencia_p2": 0.009815,
+   "excedentes": 0.04,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.energianufri.com/es/tarifas-luz",
+   "comprobado": "2026-11-19",
+   "nota": "Oferta válida solo para nuevos clientes.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.009815 frente a 0.034864 €/kW día)"
+  },
+  {
+   "id": "cnmc-energia-nufri-energia-nufri-con-horarios",
+   "nombre": "Energía Nufri · ENERGIA NUFRI - CON HORARIOS",
+   "punta": 0.270035,
+   "llano": 0.181338,
+   "valle": 0.138463,
+   "potencia_p1": 0.088231,
+   "potencia_p2": 0.088289,
+   "excedentes": 0.04,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.energianufri.com/es/tarifas-luz",
+   "comprobado": "2026-11-19",
+   "nota": "Oferta válida solo para nuevos clientes.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.088289 frente a 0.034864 €/kW día)"
+  },
+  {
+   "id": "cnmc-energia-nufri-energia-nufri-sin-horarios",
+   "nombre": "Energía Nufri · ENERGIA NUFRI - SIN HORARIOS",
+   "punta": 0.191699,
+   "llano": 0.191699,
+   "valle": 0.191699,
+   "potencia_p1": 0.088231,
+   "potencia_p2": 0.088289,
+   "excedentes": 0.04,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.energianufri.com/es/tarifas-luz",
+   "comprobado": "2026-11-19",
+   "nota": "Oferta válida solo para nuevos clientes.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.088289 frente a 0.034864 €/kW día)"
+  },
+  {
+   "id": "cnmc-avm-energia-formula-fija-noche-y-findes",
+   "nombre": "AVM Energía · Fórmula Fija NOCHE Y FINDES",
+   "punta": 0.169915,
+   "llano": 0.169915,
+   "valle": 0.10965,
+   "potencia_p1": 0.102252,
+   "potencia_p2": 0.05114,
+   "excedentes": null,
+   "consumo_max_kwh_año": 6000,
+   "vigencia": "Oferta hasta el 29/11/2026, revisión de precios anual",
+   "valido_hasta": "2026-11-29",
+   "fuente": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Oferta válida solo para nuevos clientes.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.05114 frente a 0.093151 €/kW día)"
+  },
+  {
+   "id": "cnmc-avm-energia-telefonico-precio-noche-y-findes",
+   "nombre": "AVM Energía · TELEFÓNICO. PRECIO NOCHE Y FINDES",
+   "punta": 0.1999,
+   "llano": 0.1999,
+   "valle": 0.129,
+   "potencia_p1": 0.102252,
+   "potencia_p2": 0.05114,
+   "excedentes": null,
+   "consumo_max_kwh_año": 6000,
+   "vigencia": "Oferta hasta el 29/11/2026, revisión de precios anual",
+   "valido_hasta": "2026-11-29",
+   "fuente": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/",
+   "comprobado": "2026-11-19",
+   "nota": "Oferta válida solo para nuevos clientes.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.05114 frente a 0.093151 €/kW día)"
+  },
+  {
+   "id": "cnmc-contigo-energia-tarifa-facil-2",
+   "nombre": "Contigo Energía · Tarifa Facil",
+   "punta": 0.1399,
+   "llano": 0.1399,
+   "valle": 0.1399,
+   "potencia_p1": 0.063603,
+   "potencia_p2": 0.063603,
+   "excedentes": 0.03,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://contigoenergia.com/tarifas/tarifa-de-luz-facil/",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia por debajo de los peajes y cargos regulados; potencia de valle muy distinta de la de sus otros planes (0.063603 frente a 0.010207 €/kW día)"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-discriminacion-horaria-con-mantenimiento-luz",
+   "nombre": "Repsol · Tarifa Discriminación Horaria con mantenimiento Luz",
+   "punta": 0.1999,
+   "llano": 0.1699,
+   "valle": 0.1399,
+   "potencia_p1": 0.129863,
+   "potencia_p2": 0.069589,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion1",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios. Incluye servicios obligatorios: revisa sus condiciones.",
+   "origen": "cnmc",
+   "dudosa": "potencia de punta muy distinta de la de sus otros planes (0.129863 frente a 0.099726 €/kW día); potencia de valle muy distinta de la de sus otros planes (0.069589 frente a 0.099726 €/kW día)"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-ahorro-potencia-con-mantenimiento-luz",
+   "nombre": "Repsol · Tarifa Ahorro Potencia con mantenimiento luz",
+   "punta": 0.2099,
+   "llano": 0.2099,
+   "valle": 0.2099,
+   "potencia_p1": 0.084431,
+   "potencia_p2": 0.001987,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion1",
+   "comprobado": "2026-11-19",
+   "nota": "Precio medio del primer año: los primeros 2 meses tienen otro precio o descuento. Válida para cualquier consumidor. Incluye servicios obligatorios: revisa sus condiciones.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.001987 frente a 0.099726 €/kW día)"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-ahorro-potencia",
+   "nombre": "Repsol · Tarifa Ahorro Potencia",
+   "punta": 0.2199,
+   "llano": 0.2199,
+   "valle": 0.2199,
+   "potencia_p1": 0.084431,
+   "potencia_p2": 0.001987,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion2",
+   "comprobado": "2026-11-19",
+   "nota": "Válida para cualquier consumidor.",
+   "origen": "cnmc",
+   "dudosa": "potencia de valle muy distinta de la de sus otros planes (0.001987 frente a 0.099726 €/kW día)"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-plan-ahorro-plus-con-mantenimiento-luz",
+   "nombre": "Repsol · TARIFA PLAN AHORRO PLUS con mantenimiento Luz",
+   "punta": 0.1299,
+   "llano": 0.1299,
+   "valle": 0.1299,
+   "potencia_p1": 0.068219,
+   "potencia_p2": 0.068219,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/",
+   "comprobado": "2026-11-19",
+   "nota": "Válida sólo para consumidores no domésticos. Incluye servicios obligatorios: revisa sus condiciones.",
+   "origen": "cnmc",
+   "dudosa": "potencia por debajo de los peajes y cargos regulados; potencia de punta muy distinta de la de sus otros planes (0.068219 frente a 0.099726 €/kW día); potencia de valle muy distinta de la de sus otros planes (0.068219 frente a 0.099726 €/kW día)"
+  },
+  {
+   "id": "cnmc-repsol-tarifa-discriminacion-horaria",
+   "nombre": "Repsol · Tarifa Discriminación Horaria",
+   "punta": 0.1999,
+   "llano": 0.1699,
+   "valle": 0.1399,
+   "potencia_p1": 0.129863,
+   "potencia_p2": 0.069589,
+   "excedentes": null,
+   "vigencia": "Oferta hasta el 30/12/2026, revisión de precios anual",
+   "valido_hasta": "2026-12-30",
+   "fuente": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion2",
+   "comprobado": "2026-11-19",
+   "nota": "Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
+   "origen": "cnmc",
+   "dudosa": "potencia de punta muy distinta de la de sus otros planes (0.129863 frente a 0.099726 €/kW día); potencia de valle muy distinta de la de sus otros planes (0.069589 frente a 0.099726 €/kW día)"
   }
  ]
 }

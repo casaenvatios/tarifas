@@ -14,6 +14,16 @@ Datos públicos que usa la app Casa en Vatios, publicados en GitHub Pages:
 - **Ofertas comprobadas a mano** (`"origen": "manual"`): en `ofertas-manuales.json`, comprobadas en la web de cada comercializadora. Si una oferta de la CNMC es la misma (misma web y mismos precios), se queda solo la manual. Ahí están también las reglas fiscales (impuesto eléctrico, IVA, bono social, contador) y el término de potencia del PVPC (apartado `pvpc`).
 - **PVPC**: archivo público 70 de [ESIOS](https://www.esios.ree.es/es/pvpc) (Red Eléctrica), "Precios voluntarios para el pequeño consumidor": término de energía del PVPC 2.0TD, precio horario del mercado y perfil de consumo tipo, hora a hora.
 
+## Cómo se evita publicar datos erróneos
+
+Todo es automático; no hace falta revisar nada a mano.
+
+- **Comprobación en su web** (`verificar_webs.py`, cada lunes, `.github/workflows/verificar.yml`): abre la web de cada oferta (con un navegador si la página necesita JavaScript) y mira si aparecen sus precios de energía y potencia (por día, año o mes; con impuestos o sin ellos). El resultado va a `verificaciones.json`. Las ofertas cuyos precios aparecen llevan `"comprobado_web"`.
+- **Solo se recomiendan las confirmadas**: comprobadas en su web, comprobadas a mano (`ofertas-manuales.json`) o reguladas (PVPC). Las demás salen en la app como «precio sin confirmar en su web».
+- **Filtros de sospecha** (cada día, en `actualizar_ofertas.py`): potencia por debajo de los peajes y cargos regulados, potencia a más de un 30 % de la de los otros planes de la compañía o un precio que cambia más de un 20 % de un día para otro. Si su web no confirma esos precios, la oferta va a `ofertas_dudosas` con el motivo: la app la enseña con un aviso y nunca la recomienda, y las versiones antiguas no la ven. Vuelve sola cuando su web la confirma.
+- **Correcciones** (`ofertas-manuales.json`, apartado `correcciones`): para cuando hay que fijar un dato a mano; se dejan de aplicar solas si la CNMC cambia esos valores.
+- **Aviso**: si hay ofertas sospechosas, se abre una incidencia con la lista (informativa; se cierra sola). Si los filtros dejan de funcionar (`test_filtros.py`), la tarea se para y no publica.
+
 ## Cómo se actualiza
 
 La tarea `.github/workflows/actualizar.yml` se ejecuta dos veces al día:
