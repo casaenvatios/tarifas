@@ -5,9 +5,9 @@
     "bono_social_euros_año": 9.011295,
     "contador_dia": 0.02663,
     "fuentes": {
-      "impuesto_electrico": "Factura Naturgy FE26390037917236 (sept. 2026)",
+      "impuesto_electrico": "Factura de Naturgy (sept. 2026)",
       "bono_social_euros_año": "Orden TED/634/2026, vigente desde 01/07/2026 (citada en totalenergies.es)",
-      "contador_dia": "Factura Naturgy FE26390037917236 (sept. 2026)"
+      "contador_dia": "Factura de Naturgy (sept. 2026)"
     }
   },
   "ofertas": [
@@ -254,6 +254,49 @@
       "cargos": "Orden TED/1524/2025, BOE-A-2025-26705",
       "margen": "Real Decreto 216/2014 (3,113 €/kW año)",
       "potencia_max_kw": "El PVPC solo se puede contratar hasta 10 kW (Real Decreto 216/2014)"
+    }
+  },
+  "correcciones": {
+    "cnmc-imagina-energia-plan-base-noche-y-findes-4-8-mwh": {
+      "cnmc": {
+        "valle": 0.087993,
+        "potencia_p2": 0.023291
+      },
+      "cambios": {
+        "punta": 0.201,
+        "llano": 0.127,
+        "valle": 0.093,
+        "potencia_p1": 0.108532,
+        "potencia_p2": 0.055195,
+        "origen": "manual"
+      },
+      "comprobado": "2026-11-19",
+      "motivo": "Precios de la web de Imagina (la CNMC daba la potencia de valle a 8,5 €/kW·año en vez de 20,146).",
+      "fuente": "https://imaginaenergia.com/plan-base-imagina/"
+    },
+    "cnmc-imagina-energia-plan-base-noche-y-findes": {
+      "cnmc": {
+        "valle": 0.098878,
+        "potencia_p2": 0.055196
+      },
+      "cambios": {
+        "consumo_max_kwh_año": 4000
+      },
+      "comprobado": "2026-11-19",
+      "motivo": "Solo para consumos de hasta 4 MWh al año (web de Imagina).",
+      "fuente": "https://imaginaenergia.com/plan-base-imagina/"
+    },
+    "cnmc-imagina-energia-plan-base-sin-horas": {
+      "cnmc": {
+        "valle": 0.134815,
+        "potencia_p2": 0.055196
+      },
+      "cambios": {
+        "consumo_max_kwh_año": 4000
+      },
+      "comprobado": "2026-11-19",
+      "motivo": "Solo para consumos de hasta 4 MWh al año (web de Imagina).",
+      "fuente": "https://imaginaenergia.com/plan-base-imagina/"
     }
   }
 }

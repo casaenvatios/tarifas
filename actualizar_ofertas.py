@@ -256,6 +256,26 @@ def convertir(o, hoy):
     return oferta, None
 
 
+def corregir(oferta, correcciones, hoy):
+    """Aplica la corrección de [correcciones] a una oferta de la CNMC, si la hay.
+
+    Cada corrección guarda en "cnmc" los valores que traía la CNMC cuando se comprobó
+    la web. Si la CNMC los cambia, la corrección ya no vale (la compañía ha
+    actualizado sus datos): se descarta y se avisa para revisarla.
+    """
+    c = correcciones.get(oferta['id'])
+    if not c:
+        return oferta, None
+    visto = c.get('cnmc', {})
+    if any(abs((oferta.get(k) or 0) - v) > 1e-6 for k, v in visto.items()):
+        return oferta, f'La CNMC ha cambiado {oferta["id"]}: revisa su corrección en ofertas-manuales.json'
+    oferta = dict(oferta)
+    oferta.update(c['cambios'])
+    oferta['comprobado'] = c['comprobado']
+    oferta['nota'] = (oferta.get('nota', '') + ' ' + c['motivo']).strip()
+    return oferta, None
+
+
 def misma_oferta(a, b):
     """La misma oferta dos veces (una comprobada a mano y otra de la CNMC): misma web y mismos precios."""
     if dominio(a.get('fuente')) != dominio(b.get('fuente')):
@@ -514,6 +534,8 @@ def main():
         return 1
 
     manuales = json.load(open(args.manuales, encoding='utf-8'))
+    correcciones = manuales.get('correcciones', {})
+    corregidas = 0
     ofertas = list(manuales['ofertas'])
     ids = {o['id'] for o in ofertas}
     descartes = {}
@@ -540,6 +562,11 @@ def main():
                 motivo = motivo_h
             descartes[motivo] = descartes.get(motivo, 0) + 1
             continue
+        conv, aviso = corregir(conv, correcciones, hoy)
+        if aviso:
+            print(aviso, file=sys.stderr)
+        elif conv['id'] in correcciones:
+            corregidas += 1
         if any(misma_oferta(conv, m) for m in manuales['ofertas']):
             descartes['repetida de una manual'] = descartes.get('repetida de una manual', 0) + 1
             continue
@@ -575,7 +602,8 @@ def main():
         f.write('\n')
     companias = {o['nombre'].split(' · ')[0] for o in cnmc}
     print(f'{args.salida}: {len(ofertas)} ofertas ({len(manuales["ofertas"])} manuales y {len(cnmc)} de la CNMC, '
-          f'{len(companias)} compañías), {len(horarias)} con horas de descuento. Descartadas: {descartes}')
+          f'{len(companias)} compañías), {len(horarias)} con horas de descuento, {corregidas} corregidas a mano. '
+          f'Descartadas: {descartes}')
     return 0
 
 

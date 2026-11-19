@@ -6,9 +6,9 @@
   "bono_social_euros_año": 9.011295,
   "contador_dia": 0.02663,
   "fuentes": {
-   "impuesto_electrico": "Factura Naturgy FE26390037917236 (sept. 2026)",
+   "impuesto_electrico": "Factura de Naturgy (sept. 2026)",
    "bono_social_euros_año": "Orden TED/634/2026, vigente desde 01/07/2026 (citada en totalenergies.es)",
-   "contador_dia": "Factura Naturgy FE26390037917236 (sept. 2026)"
+   "contador_dia": "Factura de Naturgy (sept. 2026)"
   }
  },
  "fuentes": {
@@ -1183,8 +1183,9 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-19",
-   "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "nota": "Oferta válida solo para nuevos clientes. Solo para consumos de hasta 4 MWh al año (web de Imagina).",
+   "origen": "cnmc",
+   "consumo_max_kwh_año": 4000
   },
   {
    "id": "cnmc-imagina-energia-plan-base-sin-horas",
@@ -1199,8 +1200,9 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-19",
-   "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "nota": "Oferta válida solo para nuevos clientes. Solo para consumos de hasta 4 MWh al año (web de Imagina).",
+   "origen": "cnmc",
+   "consumo_max_kwh_año": 4000
   },
   {
    "id": "cnmc-imagina-energia-plan-base-sin-horas-4-8-mwh",
@@ -1223,11 +1225,11 @@
   {
    "id": "cnmc-imagina-energia-plan-base-noche-y-findes-4-8-mwh",
    "nombre": "Imagina Energía · PLAN BASE NOCHE Y FINDES 4-8 MWh",
-   "punta": 0.196211,
-   "llano": 0.12239,
-   "valle": 0.087993,
-   "potencia_p1": 0.10543,
-   "potencia_p2": 0.023291,
+   "punta": 0.201,
+   "llano": 0.127,
+   "valle": 0.093,
+   "potencia_p1": 0.108532,
+   "potencia_p2": 0.055195,
    "excedentes": null,
    "consumo_min_kwh_año": 4000,
    "consumo_max_kwh_año": 8000,
@@ -1235,8 +1237,8 @@
    "valido_hasta": "2026-12-30",
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-19",
-   "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "nota": "Oferta válida solo para nuevos clientes. Precios de la web de Imagina (la CNMC daba la potencia de valle a 8,5 €/kW·año en vez de 20,146).",
+   "origen": "manual"
   },
   {
    "id": "cnmc-hs-comercializadora-20td-integral",
@@ -1877,8 +1879,7 @@
    "fuente": "https://wekiwi.es/presentacion-tarifa-mari-calmen/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc",
-   "sin_web": true
+   "origen": "cnmc"
   },
   {
    "id": "cnmc-wekiwi-carolina",
@@ -1894,8 +1895,7 @@
    "fuente": "https://wekiwi.es/presentacion-tarifa-carolina/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc",
-   "sin_web": true
+   "origen": "cnmc"
   },
   {
    "id": "cnmc-wekiwi-lorenzo",
@@ -1911,8 +1911,7 @@
    "fuente": "https://wekiwi.es/presentacion-tarifa-lorenzo/",
    "comprobado": "2026-11-19",
    "nota": "Precio medio del primer año: los primeros 12 meses tienen otro precio o descuento. Válido para clientes domésticos, pequeños negocios y comunidades de propietarios.",
-   "origen": "cnmc",
-   "sin_web": true
+   "origen": "cnmc"
   }
  ],
  "ofertas_horarias": [
