@@ -40,7 +40,8 @@
    "url": "https://www.endesa.com/es/luz-y-gas/luz/one/tarifa-one-luz-3periodos"
   },
   "repsol-ve": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.2399,
     "llano": 0.2399,
@@ -373,54 +374,6 @@
    "fecha": "2026-11-19",
    "url": "https://chcenergia.es/solar/plan-ahorro-solar"
   },
-  "cnmc-chc-energia-plan-ilumina-duo-promo": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta"
-   ],
-   "precios": {
-    "punta": 0.181871,
-    "llano": 0.181871,
-    "valle": 0.181871,
-    "potencia_p1": 0.078144,
-    "potencia_p2": 0.059938
-   },
-   "fecha": "2026-11-19",
-   "url": "https://chcenergia.es/luz/plan-ilumina-duo-promo"
-  },
-  "cnmc-lumisa-2-0td-3-periodos": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta",
-    "llano",
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.280941,
-    "llano": 0.186824,
-    "valle": 0.139765,
-    "potencia_p1": 0.08888,
-    "potencia_p2": 0.08888
-   },
-   "fecha": "2026-11-19",
-   "url": "https://lumisa.es/es/tarifa-fija"
-  },
-  "cnmc-lumisa-2-0td-precio-fijo-24h": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta"
-   ],
-   "precios": {
-    "punta": 0.125141,
-    "llano": 0.125141,
-    "valle": 0.125141,
-    "potencia_p1": 0.118638,
-    "potencia_p2": 0.024595
-   },
-   "fecha": "2026-11-19",
-   "url": "https://lumisa.es/es/tarifa-fija"
-  },
   "cnmc-visalia-visalia-3-precios": {
    "estado": "coincide",
    "faltan": [],
@@ -447,30 +400,6 @@
    "fecha": "2026-11-19",
    "url": "https://visalia.es/luz/fijo24horas/"
   },
-  "cnmc-visalia-visalia-luz-fijo-plan-ahorro-3-meses": {
-   "estado": "sin_datos",
-   "precios": {
-    "punta": 0.159875,
-    "llano": 0.159875,
-    "valle": 0.159875,
-    "potencia_p1": 0.063014,
-    "potencia_p2": 0.063014
-   },
-   "fecha": "2026-11-19",
-   "url": "https://visalia.es/luz/tarifas-flash/"
-  },
-  "cnmc-visalia-visalia-luz-fijo-empieza-sin-pagar": {
-   "estado": "sin_datos",
-   "precios": {
-    "punta": 0.149302,
-    "llano": 0.149302,
-    "valle": 0.149302,
-    "potencia_p1": 0.093151,
-    "potencia_p2": 0.093151
-   },
-   "fecha": "2026-11-19",
-   "url": "https://visalia.es/luz/tarifas-flash/"
-  },
   "cnmc-electrica-de-guadassuar-2-0td-fija": {
    "estado": "coincide",
    "faltan": [],
@@ -483,39 +412,6 @@
    },
    "fecha": "2026-11-19",
    "url": "https://www.electricaguadassuar.es/contratacion/#tarifas"
-  },
-  "cnmc-eleia-energia-tu-decides-3": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta",
-    "llano",
-    "valle",
-    "potencia_p1"
-   ],
-   "precios": {
-    "punta": 0.445053,
-    "llano": 0.32478,
-    "valle": 0.301563,
-    "potencia_p1": 0.089601,
-    "potencia_p2": 0.015686
-   },
-   "fecha": "2026-11-19",
-   "url": "https://eleiaenergia.com/nuestros-productos"
-  },
-  "cnmc-eleia-energia-balance-of-energy-3": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta"
-   ],
-   "precios": {
-    "punta": 0.241428,
-    "llano": 0.241428,
-    "valle": 0.241428,
-    "potencia_p1": 0.0929,
-    "potencia_p2": 0.0929
-   },
-   "fecha": "2026-11-19",
-   "url": "https://eleiaenergia.com/nuestros-productos"
   },
   "cnmc-elekluz-2-0td-on-line-precio-unico": {
    "estado": "sin_datos",
@@ -572,24 +468,6 @@
    "fecha": "2026-11-19",
    "url": "https://www.energianufri.com/es/tarifas-luz"
   },
-  "cnmc-energia-nufri-energia-nufri-universal-con-horarios": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta",
-    "llano",
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.316077,
-    "llano": 0.227382,
-    "valle": 0.184506,
-    "potencia_p1": 0.08373,
-    "potencia_p2": 0.009815
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.energianufri.com/es/tarifas-luz"
-  },
   "cnmc-energia-nufri-energia-nufri-calma": {
    "estado": "no_coincide",
    "faltan": [
@@ -621,56 +499,6 @@
     "valle": 0.083255,
     "potencia_p1": 0.092341,
     "potencia_p2": 0.034864
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.energianufri.com/es/tarifas-luz"
-  },
-  "cnmc-energia-nufri-energia-nufri-universal-sin-horarios": {
-   "estado": "no_coincide",
-   "faltan": [
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.237742,
-    "llano": 0.237742,
-    "valle": 0.237742,
-    "potencia_p1": 0.08373,
-    "potencia_p2": 0.009815
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.energianufri.com/es/tarifas-luz"
-  },
-  "cnmc-energia-nufri-energia-nufri-con-horarios": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta",
-    "llano",
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.270035,
-    "llano": 0.181338,
-    "valle": 0.138463,
-    "potencia_p1": 0.088231,
-    "potencia_p2": 0.088289
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.energianufri.com/es/tarifas-luz"
-  },
-  "cnmc-energia-nufri-energia-nufri-sin-horarios": {
-   "estado": "no_coincide",
-   "faltan": [
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.191699,
-    "llano": 0.191699,
-    "valle": 0.191699,
-    "potencia_p1": 0.088231,
-    "potencia_p2": 0.088289
    },
    "fecha": "2026-11-19",
    "url": "https://www.energianufri.com/es/tarifas-luz"
@@ -726,38 +554,6 @@
    },
    "fecha": "2026-11-19",
    "url": "https://www.energyavm.es/luz/formula-fija-24-horas-luz/"
-  },
-  "cnmc-avm-energia-formula-fija-noche-y-findes": {
-   "estado": "no_coincide",
-   "faltan": [
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.169915,
-    "llano": 0.169915,
-    "valle": 0.10965,
-    "potencia_p1": 0.102252,
-    "potencia_p2": 0.05114
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/"
-  },
-  "cnmc-avm-energia-telefonico-precio-noche-y-findes": {
-   "estado": "no_coincide",
-   "faltan": [
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.1999,
-    "llano": 0.1999,
-    "valle": 0.129,
-    "potencia_p1": 0.102252,
-    "potencia_p2": 0.05114
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/"
   },
   "cnmc-avm-energia-formula-fija-3-periodos": {
    "estado": "coincide",
@@ -1000,23 +796,6 @@
    "fecha": "2026-11-19",
    "url": "https://contigoenergia.com/tarifas/tarifa-luz-horas/"
   },
-  "cnmc-contigo-energia-tarifa-facil-2": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta",
-    "potencia_p1",
-    "potencia_p2"
-   ],
-   "precios": {
-    "punta": 0.1399,
-    "llano": 0.1399,
-    "valle": 0.1399,
-    "potencia_p1": 0.063603,
-    "potencia_p2": 0.063603
-   },
-   "fecha": "2026-11-19",
-   "url": "https://contigoenergia.com/tarifas/tarifa-de-luz-facil/"
-  },
   "cnmc-contigo-energia-tarifa-luz-horas-2": {
    "estado": "no_coincide",
    "faltan": [
@@ -1154,7 +933,12 @@
    "url": "https://www.iberdrola.es/luz/plan-online-tres-periodos"
   },
   "cnmc-iner-energia-solar": {
-   "estado": "sin_datos",
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "potencia_p1",
+    "potencia_p2"
+   ],
    "precios": {
     "punta": 0.2648,
     "llano": 0.1893,
@@ -1166,7 +950,8 @@
    "url": "https://inerenergia.es/luz/hogar"
   },
   "cnmc-iner-energia-la-clasica": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.2746,
     "llano": 0.193,
@@ -1178,7 +963,8 @@
    "url": "https://inerenergia.es/luz/hogar"
   },
   "cnmc-iner-energia-tranquilidad": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1986,
     "llano": 0.1986,
@@ -1190,7 +976,13 @@
    "url": "https://inerenergia.es/luz/hogar"
   },
   "cnmc-iner-energia-coche-electrico": {
-   "estado": "sin_datos",
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "valle",
+    "potencia_p1",
+    "potencia_p2"
+   ],
    "precios": {
     "punta": 0.2898,
     "llano": 0.2898,
@@ -1335,20 +1127,9 @@
    "fecha": "2026-11-19",
    "url": "https://quantiumlux.com/energia/"
   },
-  "cnmc-repsol-tarifa-discriminacion-horaria-con-mantenimiento-luz": {
-   "estado": "sin_datos",
-   "precios": {
-    "punta": 0.1999,
-    "llano": 0.1699,
-    "valle": 0.1399,
-    "potencia_p1": 0.129863,
-    "potencia_p2": 0.069589
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion1"
-  },
   "cnmc-repsol-tarifa-te-da-mas-con-mantenimiento-luz": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1599,
     "llano": 0.1599,
@@ -1360,7 +1141,8 @@
    "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-te-da-mas/?#opcion2"
   },
   "cnmc-repsol-tarifa-ahorro-renovable": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1699,
     "llano": 0.1699,
@@ -1372,7 +1154,8 @@
    "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-energia-renovable/#opcion2"
   },
   "cnmc-repsol-tarifa-sin-horarios": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1649,
     "llano": 0.1649,
@@ -1383,32 +1166,9 @@
    "fecha": "2026-11-19",
    "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-sin-horarios/#opcion2"
   },
-  "cnmc-repsol-tarifa-ahorro-potencia-con-mantenimiento-luz": {
-   "estado": "sin_datos",
-   "precios": {
-    "punta": 0.2099,
-    "llano": 0.2099,
-    "valle": 0.2099,
-    "potencia_p1": 0.084431,
-    "potencia_p2": 0.001987
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion1"
-  },
-  "cnmc-repsol-tarifa-ahorro-potencia": {
-   "estado": "sin_datos",
-   "precios": {
-    "punta": 0.2199,
-    "llano": 0.2199,
-    "valle": 0.2199,
-    "potencia_p1": 0.084431,
-    "potencia_p2": 0.001987
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion2"
-  },
   "cnmc-repsol-tarifa-ahorro-renovable-con-mantenimiento-luz": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1699,
     "llano": 0.1699,
@@ -1420,7 +1180,10 @@
    "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-energia-renovable/#opcion1"
   },
   "cnmc-repsol-tarifa-sin-horarios-con-mantenimiento-luz": {
-   "estado": "sin_datos",
+   "estado": "no_coincide",
+   "faltan": [
+    "valle"
+   ],
    "precios": {
     "punta": 0.1499,
     "llano": 0.1499,
@@ -1432,7 +1195,8 @@
    "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-sin-horarios/#opcion1"
   },
   "cnmc-repsol-tarifa-tranquilisima-con-mantenimiento-luz": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1799,
     "llano": 0.1799,
@@ -1444,7 +1208,8 @@
    "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-tranquilisima/"
   },
   "cnmc-repsol-tarifa-sin-horarios-pyme-con-mantenimiento-luz": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1499,
     "llano": 0.1499,
@@ -1456,7 +1221,8 @@
    "url": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/"
   },
   "cnmc-repsol-tarifa-sin-horarios-pyme": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1649,
     "llano": 0.1649,
@@ -1467,32 +1233,9 @@
    "fecha": "2026-11-19",
    "url": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/tarifa-sin-horarios-pyme/#opcion2"
   },
-  "cnmc-repsol-tarifa-plan-ahorro-plus-con-mantenimiento-luz": {
-   "estado": "sin_datos",
-   "precios": {
-    "punta": 0.1299,
-    "llano": 0.1299,
-    "valle": 0.1299,
-    "potencia_p1": 0.068219,
-    "potencia_p2": 0.068219
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/"
-  },
-  "cnmc-repsol-tarifa-discriminacion-horaria": {
-   "estado": "sin_datos",
-   "precios": {
-    "punta": 0.1999,
-    "llano": 0.1699,
-    "valle": 0.1399,
-    "potencia_p1": 0.129863,
-    "potencia_p2": 0.069589
-   },
-   "fecha": "2026-11-19",
-   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion2"
-  },
   "cnmc-repsol-tarifa-te-da-mas": {
-   "estado": "sin_datos",
+   "estado": "coincide",
+   "faltan": [],
    "precios": {
     "punta": 0.1699,
     "llano": 0.1699,
@@ -1604,6 +1347,7 @@
   "cnmc-wekiwi-carolina": {
    "estado": "no_coincide",
    "faltan": [
+    "punta",
     "llano",
     "valle",
     "potencia_p1"
@@ -1619,10 +1363,7 @@
    "url": "https://wekiwi.es/presentacion-tarifa-carolina/"
   },
   "cnmc-wekiwi-lorenzo": {
-   "estado": "no_coincide",
-   "faltan": [
-    "punta"
-   ],
+   "estado": "sin_datos",
    "precios": {
     "punta": 0.14715,
     "llano": 0.14715,
@@ -1632,6 +1373,302 @@
    },
    "fecha": "2026-11-19",
    "url": "https://wekiwi.es/presentacion-tarifa-lorenzo/"
+  },
+  "cnmc-chc-energia-plan-ilumina-duo-promo": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta"
+   ],
+   "precios": {
+    "punta": 0.181871,
+    "llano": 0.181871,
+    "valle": 0.181871,
+    "potencia_p1": 0.078144,
+    "potencia_p2": 0.059938
+   },
+   "fecha": "2026-11-19",
+   "url": "https://chcenergia.es/luz/plan-ilumina-duo-promo"
+  },
+  "cnmc-lumisa-2-0td-3-periodos": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "llano",
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.280941,
+    "llano": 0.186824,
+    "valle": 0.139765,
+    "potencia_p1": 0.08888,
+    "potencia_p2": 0.08888
+   },
+   "fecha": "2026-11-19",
+   "url": "https://lumisa.es/es/tarifa-fija"
+  },
+  "cnmc-lumisa-2-0td-precio-fijo-24h": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta"
+   ],
+   "precios": {
+    "punta": 0.125141,
+    "llano": 0.125141,
+    "valle": 0.125141,
+    "potencia_p1": 0.118638,
+    "potencia_p2": 0.024595
+   },
+   "fecha": "2026-11-19",
+   "url": "https://lumisa.es/es/tarifa-fija"
+  },
+  "cnmc-visalia-visalia-luz-fijo-plan-ahorro-3-meses": {
+   "estado": "coincide",
+   "faltan": [],
+   "precios": {
+    "punta": 0.159875,
+    "llano": 0.159875,
+    "valle": 0.159875,
+    "potencia_p1": 0.063014,
+    "potencia_p2": 0.063014
+   },
+   "fecha": "2026-11-19",
+   "url": "https://visalia.es/luz/tarifas-flash/"
+  },
+  "cnmc-visalia-visalia-luz-fijo-empieza-sin-pagar": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.149302,
+    "llano": 0.149302,
+    "valle": 0.149302,
+    "potencia_p1": 0.093151,
+    "potencia_p2": 0.093151
+   },
+   "fecha": "2026-11-19",
+   "url": "https://visalia.es/luz/tarifas-flash/"
+  },
+  "cnmc-eleia-energia-tu-decides-3": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "llano",
+    "valle",
+    "potencia_p1"
+   ],
+   "precios": {
+    "punta": 0.445053,
+    "llano": 0.32478,
+    "valle": 0.301563,
+    "potencia_p1": 0.089601,
+    "potencia_p2": 0.015686
+   },
+   "fecha": "2026-11-19",
+   "url": "https://eleiaenergia.com/nuestros-productos"
+  },
+  "cnmc-eleia-energia-balance-of-energy-3": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta"
+   ],
+   "precios": {
+    "punta": 0.241428,
+    "llano": 0.241428,
+    "valle": 0.241428,
+    "potencia_p1": 0.0929,
+    "potencia_p2": 0.0929
+   },
+   "fecha": "2026-11-19",
+   "url": "https://eleiaenergia.com/nuestros-productos"
+  },
+  "cnmc-energia-nufri-energia-nufri-universal-con-horarios": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "llano",
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.316077,
+    "llano": 0.227382,
+    "valle": 0.184506,
+    "potencia_p1": 0.08373,
+    "potencia_p2": 0.009815
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.energianufri.com/es/tarifas-luz"
+  },
+  "cnmc-energia-nufri-energia-nufri-universal-sin-horarios": {
+   "estado": "no_coincide",
+   "faltan": [
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.237742,
+    "llano": 0.237742,
+    "valle": 0.237742,
+    "potencia_p1": 0.08373,
+    "potencia_p2": 0.009815
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.energianufri.com/es/tarifas-luz"
+  },
+  "cnmc-energia-nufri-energia-nufri-con-horarios": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "llano",
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.270035,
+    "llano": 0.181338,
+    "valle": 0.138463,
+    "potencia_p1": 0.088231,
+    "potencia_p2": 0.088289
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.energianufri.com/es/tarifas-luz"
+  },
+  "cnmc-energia-nufri-energia-nufri-sin-horarios": {
+   "estado": "no_coincide",
+   "faltan": [
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.191699,
+    "llano": 0.191699,
+    "valle": 0.191699,
+    "potencia_p1": 0.088231,
+    "potencia_p2": 0.088289
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.energianufri.com/es/tarifas-luz"
+  },
+  "cnmc-avm-energia-formula-fija-noche-y-findes": {
+   "estado": "no_coincide",
+   "faltan": [
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.169915,
+    "llano": 0.169915,
+    "valle": 0.10965,
+    "potencia_p1": 0.102252,
+    "potencia_p2": 0.05114
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/"
+  },
+  "cnmc-avm-energia-telefonico-precio-noche-y-findes": {
+   "estado": "no_coincide",
+   "faltan": [
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.1999,
+    "llano": 0.1999,
+    "valle": 0.129,
+    "potencia_p1": 0.102252,
+    "potencia_p2": 0.05114
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.energyavm.es/luz/formula-fija-noche-y-findes/"
+  },
+  "cnmc-contigo-energia-tarifa-facil-2": {
+   "estado": "no_coincide",
+   "faltan": [
+    "punta",
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.1399,
+    "llano": 0.1399,
+    "valle": 0.1399,
+    "potencia_p1": 0.063603,
+    "potencia_p2": 0.063603
+   },
+   "fecha": "2026-11-19",
+   "url": "https://contigoenergia.com/tarifas/tarifa-de-luz-facil/"
+  },
+  "cnmc-repsol-tarifa-discriminacion-horaria-con-mantenimiento-luz": {
+   "estado": "coincide",
+   "faltan": [],
+   "precios": {
+    "punta": 0.1999,
+    "llano": 0.1699,
+    "valle": 0.1399,
+    "potencia_p1": 0.129863,
+    "potencia_p2": 0.069589
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion1"
+  },
+  "cnmc-repsol-tarifa-ahorro-potencia-con-mantenimiento-luz": {
+   "estado": "coincide",
+   "faltan": [],
+   "precios": {
+    "punta": 0.2099,
+    "llano": 0.2099,
+    "valle": 0.2099,
+    "potencia_p1": 0.084431,
+    "potencia_p2": 0.001987
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion1"
+  },
+  "cnmc-repsol-tarifa-ahorro-potencia": {
+   "estado": "coincide",
+   "faltan": [],
+   "precios": {
+    "punta": 0.2199,
+    "llano": 0.2199,
+    "valle": 0.2199,
+    "potencia_p1": 0.084431,
+    "potencia_p2": 0.001987
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-ahorro-potencia/#opcion2"
+  },
+  "cnmc-repsol-tarifa-plan-ahorro-plus-con-mantenimiento-luz": {
+   "estado": "no_coincide",
+   "faltan": [
+    "potencia_p1",
+    "potencia_p2"
+   ],
+   "precios": {
+    "punta": 0.1299,
+    "llano": 0.1299,
+    "valle": 0.1299,
+    "potencia_p1": 0.068219,
+    "potencia_p2": 0.068219
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.repsol.es/autonomos-y-empresas/soluciones/luz-y-gas/tarifas/luz-plan-ahorro-plus/"
+  },
+  "cnmc-repsol-tarifa-discriminacion-horaria": {
+   "estado": "coincide",
+   "faltan": [],
+   "precios": {
+    "punta": 0.1999,
+    "llano": 0.1699,
+    "valle": 0.1399,
+    "potencia_p1": 0.129863,
+    "potencia_p2": 0.069589
+   },
+   "fecha": "2026-11-19",
+   "url": "https://www.repsol.es/particulares/hogar/luz-y-gas/tarifas/tarifa-discriminacion-horaria/#opcion2"
   }
  }
 }
