@@ -1,0 +1,40 @@
+name: Comprobar las ofertas en su web
+
+# Una vez por semana abre la web de cada oferta y mira si aparecen sus precios
+# (verificar_webs.py). El resultado (verificaciones.json) lo usa actualizar_ofertas.py
+# cada día: solo las ofertas confirmadas se pueden recomendar en la app.
+on:
+  schedule:
+    # Lunes a las 3:00 UTC, antes de la actualización de las 5:00.
+    - cron: '0 3 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar un navegador para las webs que necesitan JavaScript
+        run: |
+          pip install playwright==1.48.0
+          python -m playwright install --with-deps chromium
+      - name: Comprobar las webs
+        run: python verificar_webs.py --reglas reglas.json --salida verificaciones.json
+      - name: Publicar el resultado
+        run: |
+          if git diff --quiet -- verificaciones.json && git ls-files --error-unmatch verificaciones.json >/dev/null 2>&1; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "casaenvatios-bot"
+          git config user.email "casa.en.vatios@gmail.com"
+          git add verificaciones.json
+          git commit -m "Comprobación de las webs del $(date '+%d/%m/%Y')"
+          git push

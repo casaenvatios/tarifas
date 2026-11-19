@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   actualizar:
@@ -20,7 +21,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Probar los filtros
+        # Si los filtros fallan, la tarea se para (GitHub avisa por correo) y no se publica nada.
+        run: python test_filtros.py
       - name: Generar reglas.json
+        # Aplica los filtros automáticos y la comprobación semanal de las webs (verificaciones.json).
         run: python actualizar_ofertas.py --salida reglas.json
       - name: Generar pvpc.json
         # Si ESIOS falla, se sigue con el pvpc.json de ayer y se publican las ofertas igual.
@@ -36,3 +41,20 @@ jobs:
           git add reglas.json pvpc.json
           git commit -m "Ofertas y PVPC del $(date '+%d/%m/%Y %H:%M')"
           git push
+      - name: Aviso de ofertas sospechosas
+        # Una incidencia abierta con la lista (solo avisa al crearla; luego se actualiza en silencio
+        # y se cierra sola cuando ya no hay ninguna). Es informativa: no hace falta hacer nada.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list --label dudosas --state open --json number -q '.[0].number' 2>/dev/null || true)
+          if [ -s informe-dudosas.md ]; then
+            if [ -z "$n" ]; then
+              gh label create dudosas --color E0A100 --description "Ofertas con datos que no cuadran" --force
+              gh issue create --title "Ofertas sospechosas (se revisan solas)" --label dudosas --body-file informe-dudosas.md
+            else
+              gh issue edit "$n" --body-file informe-dudosas.md
+            fi
+          elif [ -n "$n" ]; then
+            gh issue close "$n" --comment "Ya no hay ofertas sospechosas."
+          fi
