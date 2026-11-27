@@ -1071,7 +1071,8 @@
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-27",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "sin_web": true
   },
   {
    "id": "cnmc-imagina-energia-plan-base-noche-y-findes",
@@ -1087,7 +1088,8 @@
    "fuente": "https://imaginaenergia.com/plan-base-imagina/",
    "comprobado": "2026-11-27",
    "nota": "Oferta válida solo para nuevos clientes.",
-   "origen": "cnmc"
+   "origen": "cnmc",
+   "sin_web": true
   },
   {
    "id": "cnmc-imagina-energia-plan-base-sin-horas",
@@ -1104,6 +1106,7 @@
    "comprobado": "2026-11-27",
    "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc",
+   "sin_web": true,
    "comprobado_web": "2026-11-23"
   },
   {
@@ -1123,6 +1126,7 @@
    "comprobado": "2026-11-27",
    "nota": "Oferta válida solo para nuevos clientes.",
    "origen": "cnmc",
+   "sin_web": true,
    "comprobado_web": "2026-11-23"
   },
   {
